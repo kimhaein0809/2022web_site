@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        
+        /* reset */
+        *{margin: 0;padding: 0;}
+        li{list-style: none;}
+        .clearfix::after{content: "";display: block;clear: both;}
+        a:link{color: #333;text-decoration: none;}
+        a:visited{color: #333;}
+        a:hover{color: pink;}
+        body{font-family: 'Noto Sans KR', sans-serif;}
+
+        /* header */
+        .headerWrap{
+            width: 1440px;margin: 0 auto;
+            background-color: #ff2;
+        }
+        .headerWrap>h1{
+            width: 168px;line-height: 60px;
+            float: left;
+        }
+        .navbar{
+            width: 540px;
+            float: right;
+            background-color: #00f;
+        }
+        .anvbar>ul>li{float: left;width: 25%;}
+        .navbar>ul>li>a{display: block;line-height: 60px;text-align: center;}
+
+
+
+        
+    </style>
+</head>
+<body>
+    <header class="headerWrap">
+        <h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
+        <nav class="navbar">
+            <ul class="clearfix">
+                <li><a href="#">가</a></li>
+                <li><a href="#">나</a></li>
+                <li><a href="#">다</a></li>
+                <li><a href="#">라</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="visualWrap">
+        <div class="visual">
+            <h2>가나다라<br>가나다라</h2>
+        </div>
+    </div>
+</body>
+</html>

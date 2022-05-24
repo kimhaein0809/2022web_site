@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+body{font-family: 'Nanum Gothic', sans-serif;}
+
+/* header */
+.headerTop{width: 980px;margin: 0 auto;}
+.topMenu ul{float: right;}
+.topMenu li{float: left;}
+.topMenu li a{display: block;padding: 7px 10px;font-size: 12px;line-height: 12px;}

@@ -45,3 +45,27 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .navbar>ul>li>a{display: block;line-height: 45px;color: white;text-align: center;}
 .mainMenuWrap .navbar li a:hover{background-color: #336DAC;}
 
+/* visual */
+.visualWrap{
+    /* background-image: url(../images/main_bg01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #213C6B; */
+    background:#213C6B url(../images/main_bg01.jpg) no-repeat center;
+}
+.visualWrap .visual{
+    width: 980px;height: 400px;margin: 0 auto;position: relative;
+    overflow:hidden
+}
+.visualWrap .visual .txt{
+    position: absolute;top: 100px;
+    color:#EFF0EE;
+}
+.visualWrap .visual h3{
+    line-height: 80px;font-size:76.6px ;letter-spacing: 0.34em;
+    margin-bottom: 10px;
+    
+}
+.visualWrap .visual img{position: absolute;right: 0;}
+
+.box{background: #f00; height: 300px;}

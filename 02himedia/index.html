@@ -26,11 +26,13 @@
                 </nav>
             </div>
         </div>
-        <h1><a href="#">하이미디어</a></h1>
-        <div class="toggle">
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="center">
+            <h1><a href="#">하이미디어</a></h1>
+            <div class="toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
         <div class="mainMenuWrap">
             <nav class="navbar">
@@ -186,21 +188,24 @@
     </section>
     <footer class="footerWrap"> 
         <div class="footerTop">
-           <div class="container">
-               <nav class="ftNav">
-                   <ul>
-                       <li>1</li>
-                       <li>2</li>
-                       <li>3</li>
+           <div class="container footer clearfix">
+               <nav class="ftNav"> <!-- float left -->
+                   <ul class="clearfix">
+                       <li><a href="#">개인정보 취급방침</a></li> <!-- float left -->
+                       <li><a href="#">이메일주소 무단 수집 거부</a></li>
+                       <li><a href="#">패밀리 사이트</a></li>
                    </ul>
                </nav>
-               <div class="topMove">top</div>
+               <div class="topMove"> <!-- float right -->
+                   <a href="#"><img src="images/top.png" alt=""></a>
+               </div>
            </div>
         </div>
-        <div class="container ftBottom">
+        <div class="container ftBottom clearfix">
             <div class="logo">logo</div>
             <div class="addr">
                 Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Maxime, amet.
+                <br> adipisicing elit. Maxime, amet.
             </div>
         </div>
     </footer>

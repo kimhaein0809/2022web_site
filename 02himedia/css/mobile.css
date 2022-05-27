@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+
+
+#headerWrap .center
+#headerWrap h1{
+    margin: 0 auto;width: 160px;
+    }
+#headerWrap h1 a{color:#333;font-size: 24px;}
+
+#headerWrap .toggle{
+    width: 48px;height: 48px;
+    border: 1px solid #cdcdcd;
+    position: absolute;right: 0;top: 14px;
+    cursor:pointer
+}
+.toggle div{
+    width: 20px;height: 2px;background-color: #666;
+    position: absolute;left:calc( 50% - 10px);
+    top:calc( 50%  - 1px )
+}
+.toggle div:first-child{top:calc( 50% - 9px)}
+.toggle div:last-child{top:calc( 50% + 7px)}
+
+.mainMenuWrap{background-color: #1D5DA4;margin-top: 17px;}
+.navbar{width: 980px;margin: 0 auto;}
+.navbar>ul>li{
+    float: left;width: calc( 100% / 6 );
+    border-left: 1px solid #336DAC;
+}
+.mainMenuWrap .navbar li:last-child{border-right: 1px solid #336DAC;}
+.navbar>ul>li>a{display: block;line-height: 45px;color: white;text-align: center;}
+.mainMenuWrap .navbar li a:hover{background-color: #336DAC;}
+
+
+
+.visualWrap{
+    /* background-image: url(../images/main_bg01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #213C6B; */
+    background:#213C6B url(../images/main_bg01.jpg) no-repeat center;
+}
+.visualWrap .visual{
+    width: 980px;height: 400px;margin: 0 auto;position: relative;
+    overflow:hidden
+}
+.visualWrap .visual .txt{
+    position: absolute;top: 100px;
+    color:#EFF0EE;
+}
+.visualWrap .visual h3{
+    line-height: 80px;font-size:76.6px ;letter-spacing: 0.34em;
+    margin-bottom: 10px;
+    
+}
+.visualWrap .visual img{position: absolute;right: 0;}
+
+.banWrap{background-color: #eee;margin-bottom: 50px;}
+.banWrap .banner{width: 980px;margin: 0 auto;text-align: center;color: #fff;}
+.banWrap .banner li{
+    width:calc( 100% / 5 ) ;
+    height: 196px;padding-top: 14px;float: left;
+}
+.banWrap .banner h3{font-size: 19px;letter-spacing: -7.5%;line-height: 19px;margin-bottom: 10px;}
+.banWrap .banner p{font-size: 14px;letter-spacing: -5.5%;line-height: 14px;}
+.banWrap .banner img{margin: 0 auto;margin-bottom: 16px;}
+.banWrap .banner li:nth-child(1){background-color: #7C99B9;}
+.banWrap .banner li:nth-child(2){background-color: #4F74A1;}
+.banWrap .banner li:nth-child(3){background-color: #4B8CE0;}
+.banWrap .banner li:nth-child(4){background-color: #3DB5F2;}
+.banWrap .banner li:nth-child(5){background-color: #95C8FF;}
+
+.container{width: 980px;margin: 0 auto;}
+.container.sec01{margin-bottom: 25px;}
+.container.sec01 li{width: calc( ( 100% - 50px ) / 3 );margin-right: 25px;float: left;}
+.container.sec01 li:last-child{margin-right: 0;}
+
+.container.sec01 li img{width: 100%;}
+.container.sec01 li .txt{
+    padding: 20px 16px;border: 1px solid #E1E1E1;
+    border-top: 0 none;
+}
+.container.sec01 li .txt h3{
+    font-size: 19px;line-height: 19px;letter-spacing: -7.5%;
+    margin-bottom: 10px;
+}
+.container.sec01 li .txt p{
+    font-size: 14px;line-height: 20px;letter-spacing: -5.5%;
+}
+
+
+
+@media screen and (max-width:720px){
+    /* header */
+    /* #headerWrap{padding: 12px 0;} */
+    #headerWrap .center{width: 100%;}
+    .headerTopWrap{display: none;}
+    #headerWrap .toggle{right: 16px;top: 16px;}
+    .mainMenuWrap{display: none;}
+    
+    /* visual */
+    .visualWrap .visual{width: 100%;height: 350px;}
+    .visualWrap .visual .txt{left: 16px;top: 30px;}
+    .visualWrap .visual h3{font-size: 50px;line-height: 60px;}
+    .visualWrap .visual img{width: 300px;bottom: -70px;right: -45px;}
+
+    .banWrap .banner{width: 100%;}
+    .banWrap .banner li{width: 50%;}
+    .banWrap .banner li:last-child{width: 100%;}
+}
+
+.container{width: 100%;padding: 0 16px;}
+.container.sec01 li,.container.sec02 li{
+    width:calc( ( 100% -20px ) /2 );margin-right: 20px;
+}
+.container.sec01 li:nth-child(2),
+.container.sec02 li:nth-child(2){margin-right: 0;}
+
+.container.sec01 li:last-child(2),
+.container.sec02 li:last-child(2){display: none;}
+
+.container.sec01 li .txt{
+    position: absolute;
+    bottom: 10px;left: 16px;
+    border: 0 none;
+    padding: 0;color: white;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.container.sec01 li .txt p{display: none;}

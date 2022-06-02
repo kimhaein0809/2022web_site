@@ -3,7 +3,7 @@
 
       
 .navbar{width: 1280px;margin: 0 auto;}
-.visual{position: relative;height: 100vh;min-height: 800px;margin-bottom: 170px;}
+.visual{position: relative;height: 100vh;min-height: 800px;;}
 .visual .txtWrap{
     position: absolute;width: 1280px;left: 50%;
     margin-left: -640px;color: white;height: 100%;
@@ -48,8 +48,84 @@
 .headerWrap li a{display: block;line-height: 76px;text-align: center;font-weight: 700;font-size: 20px;}
 
 
+.sec01{padding-top: 160px;padding-bottom: 160px;}
+
 /* container */
-.container{width: 1280px;margin: 0 auto;}
+.container{width: 1280px;margin: 0 auto;position: relative;}
+
+/* content 1st */
+.container.cont1st .titleWrap{margin-bottom: 100px;}
+.container.cont1st .title{padding-bottom: 20px;position: relative;text-align: left;}
+
+.container.cont1st h1{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.41;
+    letter-spacing: -2px;
+    text-indent: -2px;
+}
+.container.cont1st h1:after{
+    content: "";position: absolute;
+    bottom: 0;left: 0;width: 70px;height: 5px;
+    background-color: #ffd44a;
+}
+.container.cont1st .sub{padding-left: 600px;
+    font-size: 18px;
+    line-height: 1.56;}
+
+.container.cont1st li{
+    float: left;width: calc( ( 100% - 32px * 2 ) / 3 );margin-right: 32px;
+}
+.container.cont1st li:last-child{
+    margin-right: 0;
+}
+.container.cont1st li:hover .card{
+    transform: translate(0,-20px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.container.cont1st .card img{width: 100%;}
+
+.card{transition: 0.3s;}
+.card img{width: 100%;transition: 0.3s;}
+
+
+.txtbox{padding: 20px 16px 0;margin-bottom: 160px;}
+.txtbox .tit{display: inline-block;
+    padding-right: 28px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAD9JREFUOBFjYBgFQyoEfICuFaKWi5mBBp0G4vPUNBTkOpCBw8xQJqCX6AqoGo5UNYwmyYaqCZuuETVqGWoIAABn3gznYxD0xQAAAABJRU5ErkJggg==) no-repeat right 50%;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.52;}
+    .txtbox .txt{display: block;margin-top: 7px;
+        font-size: 14px;
+        line-height: 1.6;}
+
+
+
+/* cont2st */
+
+.container.cont2st{position: relative;height: 462px;}
+.txtBox{
+    width: 1150px;height: 338px;background-color: #ffd44a;
+    padding: 102px 520px 102px 104px;
+    box-sizing: border-box;
+}
+.txtBox h3{font-size: 27px;font-weight: 500;line-height: 1.43;letter-spacing: -1px}
+.txtBox p{
+    display: block;
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.47;
+}
+.imgF{position: absolute;right: 10px;top: 100px;}
+
+.sec02{background-color: #f7f8f9;}
+.sec02 .container{padding-top: 160px;padding-bottom: 160px;width: 1280px;}
+
+
+/* common */
+/* .py160{padding: 160px 0 !important;} */
 
 
 

@@ -7,7 +7,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     width: 1200px;margin: 0 auto;
 }
 
-#header{}
+
 .headerTopWrap{background: #156547;}
 .headerTop .collWrap{float: left;}
 .headerTop .collWrap li{float: left;width: 120px;background: #143d01;font-size: 16px;margin-right: 2px;}

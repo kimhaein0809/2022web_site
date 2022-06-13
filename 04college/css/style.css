@@ -79,3 +79,18 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 #section .sec2st>ul>li:nth-child(7){width: 300px;height: 224px;}
 #section .sec2st>ul>li:nth-child(8){width: 900px;height: 224px;}
 
+.visual .slide img{width: 100%;}
+.txtWrap{position: absolute;left: 110px;top: 60px;}
+.txtWrap h1{font-size: 60px;color: #143d01;}
+.txtWrap h1 span{font-size: 60px;color: #0b741a;}
+.txtWrap .btn{
+    display: inline-block;
+    padding: 10px 30px;color: white;
+    transition: .2s;font-size: 16px;background-color: #143d01;
+}
+.txtWrap .btn:hover{
+    background-color: #fff;
+    color: #143d01;font-weight: bold;
+}
+
+

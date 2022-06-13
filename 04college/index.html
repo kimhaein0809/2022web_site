@@ -13,6 +13,41 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".slide").bxSlider();
+        });
+    </script>
+    <style>
+    .bx-wrapper {
+    -moz-box-shadow: 0 0 0 #ccc;
+    -webkit-box-shadow: 0 0 0 #ccc;
+    box-shadow: 0 0 0 #ccc;
+    border: 0 none #fff;
+}
+    .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: white;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #143d01;
+}
+
+    </style>
     
 </head>
 <body>
@@ -98,7 +133,20 @@
         <div class="sec2st container">
             <!-- ul.clearfix>li*8>{$} -->
             <ul class="clearfix">
-                <li>1 slide</li>
+                <li>
+                    <ul class="slide">
+                        <li>
+                            <div class="txtWrap">
+                                <h1>연구성과<br>통합 관리 시스템<br><span>PURE</span></h1>
+                                <a href="#" class="btn">서비스 바로가기 +</a>
+                            </div>
+                            <img src="images/slide1.jpg" alt="">
+                        </li>
+                        <li><img src="images/slide1.jpg" alt=""></li>
+                        <li><img src="images/slide1.jpg" alt=""></li>
+                        <li><img src="images/slide1.jpg" alt=""></li>
+                    </ul>
+                </li>
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>

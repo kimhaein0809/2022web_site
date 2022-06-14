@@ -71,26 +71,46 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 #section .sec2st>ul>li:nth-child(2n){background-color: pink;}
 
 #section .sec2st>ul>li:nth-child(1){width: 900px;height: 450px;}
-#section .sec2st>ul>li:nth-child(2){width: 300px;height: 450px;}
-#section .sec2st>ul>li:nth-child(3){width: 300px;height: 224px;}
-#section .sec2st>ul>li:nth-child(4){width: 300px;height: 224px;}
+#section .sec2st>ul>li:nth-child(2){width: 300px;height: 450px;background-image: url(../images/li.jpg);}
+#section .sec2st>ul>li:nth-child(3){width: 300px;height: 224px;background-color: #156547;}
+#section .sec2st>ul>li:nth-child(4){width: 300px;height: 224px;background-color: #e82f68;}
 #section .sec2st>ul>li:nth-child(5){width: 300px;height: 224px;}
 #section .sec2st>ul>li:nth-child(6){width: 300px;height: 224px;}
 #section .sec2st>ul>li:nth-child(7){width: 300px;height: 224px;}
 #section .sec2st>ul>li:nth-child(8){width: 900px;height: 224px;}
 
+#section .sec2st{position: relative;}
+.next{position: absolute;top: 200px;right: 300px;opacity: 70%;}
+.pre{position: absolute;top: 200px;opacity: 70%;}
+
 .visual .slide img{width: 100%;}
 .txtWrap{position: absolute;left: 110px;top: 60px;}
-.txtWrap h1{font-size: 60px;color: #143d01; word-spacing: -5px;}
-.txtWrap h1 span{font-size: 60px;color: #0b741a;}
+.txtWrap h1{font-size: 60px;color: #143d01; word-spacing: -5px;line-height: 80px;margin-bottom: 20px;}
+.txtWrap h1 span{color: #0b741a;}
 .txtWrap .btn{
     display: inline-block;
-    padding: 10px 30px;color: white;
-    transition: .2s;font-size: 16px;background-color: #143d01;
+    width: 168px;height: 40px;color: #ffffff;
+    transition: .2s;font-size: 16px;background-color: #143d01;text-align: center;line-height: 40px;
 }
 .txtWrap .btn:hover{
     background-color: #fff;
     color: #143d01;font-weight: bold;
 }
 
+.tWrap{padding: 40px;}
+.tWrap>span{font-weight: 700;}
+h2{font-size: 40px;font-weight: lighter;color: white;letter-spacing: -5px;}
+.tWrap p{font-size: 18px;color: white;margin-bottom: 20px;}
+.tWrap .btn2{
+    display: inline-block;border: 1px solid #dae1e6;
+    color: white;width: 168px;height: 40px;text-align: center;
+    transition: .2s;font-size: 16px;background-color: #142002;
+}
 
+.ttWrap{padding: 30px;}
+.ttWrap h3{color: white;font-size: 22px;margin-bottom: 20px;}
+.ttWrap ul{}
+.ttWrap ul li{float: left;margin-right: 30px;}
+.ttWrap ul li:nth-child(3){margin-right: 0;}
+.ttWrap ul li img{margin-bottom: 10px;}
+.ttWrap ul li p{color: white;font-size: 14px;text-align: center;}

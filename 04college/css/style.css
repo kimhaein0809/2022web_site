@@ -103,14 +103,16 @@ h2{font-size: 40px;font-weight: lighter;color: white;letter-spacing: -5px;}
 .tWrap p{font-size: 18px;color: white;margin-bottom: 20px;}
 .tWrap .btn2{
     display: inline-block;border: 1px solid #dae1e6;
-    color: white;width: 168px;height: 40px;text-align: center;
-    transition: .2s;font-size: 16px;background-color: #142002;
+    color: white;width: 168px;height: 40px;text-align: center;line-height: 36px;
+    transition: .2s;font-size: 16px;background-color: rgba(20, 32, 2, 50%);
 }
 
 .ttWrap{padding: 30px;}
-.ttWrap h3{color: white;font-size: 22px;margin-bottom: 20px;}
+h3{color: white;font-size: 22px;margin-bottom: 20px;}
 .ttWrap ul{}
 .ttWrap ul li{float: left;margin-right: 30px;}
 .ttWrap ul li:nth-child(3){margin-right: 0;}
 .ttWrap ul li img{margin-bottom: 10px;}
 .ttWrap ul li p{color: white;font-size: 14px;text-align: center;}
+
+.container{}

@@ -3,5 +3,5 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 li{list-style: none;}
 .clearfix:after{content: "";display: block;clear: both;}
-a:link,a:visited{text-decoration: none;color: #939393;}
+a:link,a:visited{text-decoration: none;color: white;}
 img{display: block;}

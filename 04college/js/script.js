@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $(".youtube").colorbox({
+        iframe:true,
+        innerWidth:1200,
+        innerHeight:675
+    })
+});
+$(document).ready(function(){
+    $(".slide").bxSlider();
+});

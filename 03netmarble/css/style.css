@@ -164,6 +164,7 @@
 .footIn{width: 1280px;margin: 0 auto;}
 .topMove{float: right;width: 60px;height: 45px;background-color: #404040;}
 .footerWrap .policy{margin-top: 46px;}
+.footerWrap .footIn .copy{color: hsla(0,0%,88.2%,.5);font-size: 11px;margin-top: 26px;}
 .policy li{float: left;position: relative;}
 .policy li:after{
     content: "";display: block;width: 1px;height: 13px;
@@ -177,7 +178,9 @@
 } */
 .policy li a{
     display: block;margin: 0 10px;font-size: 12px;
-    color: hsla(0,0%,88.2%,.7);line-height: 20px;
+    color: hsla(0,0%,88.2%,.7);line-height: 20px;letter-spacing: -1.6px;
+}
+.policy li a:first-child{margin-left: 0;
 }
 
 

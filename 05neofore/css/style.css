@@ -390,7 +390,7 @@ h1{font-size: 40px;letter-spacing: -1.6px;}
 .newsCon .cardWrap{display: flex;justify-content: space-between;}
 .newsCon .cardWrap .card{overflow: hidden;width: 32.5%;border: 1px solid #eee;border-radius: 10px;transition: 0.3s;}
 .newsCon .cardWrap .card:hover{box-shadow: 0 10px 10px rgba(0,0,0,0.1);}
-.newsCon .cardWrap .card:hover .txt{transform: translateY(-65px);}
+.newsCon .cardWrap .card:hover .txt{transform: translateY(-60px);}
 .newsCon .cardWrap .card a{
     height: 406px;display: block;
     padding-top: 260px;background-repeat: no-repeat;

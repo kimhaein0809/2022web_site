@@ -98,7 +98,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     color: white;width: 300px;height: 54px;text-align: center;line-height: 54px;
     font-size: 20px;background-color: rgba(0, 0, 0, 70%);position: absolute;bottom: 0;transition: .2s;
 }
-#section .sec2st>ul>li:nth-child(6) a:hover{transform: translateY(60px);}
+/* #section .sec2st>ul>li:nth-child(6) a:hover{transform: translateY(60px);} */
 
 #section .sec2st>ul>li:nth-child(7){width: 300px;height: 226px;background-image: url(../images/video.jpg);position: relative;}
 #section .sec2st>ul>li:nth-child(7) img{position: absolute;top: 82px;left: 120px;}
@@ -158,15 +158,16 @@ h2{font-size: 40px;font-weight: lighter;color: white;letter-spacing: -5px;}
 .footerTop:after{content: "";display: block;width: 100%;height: 1px;
     background-color: #979499;}
 .container.footer .ftNav{float: left;font-size: 13px;color: #ccc;}
-.container.footer .ftNav ul{}
 .container.footer .topMove{float: right;}
 .ftNav li{float: left;position: relative;}
 .ftNav li a{display: block;padding: 30px 120px;font-size: 14px;color: #979499;line-height: 14px;}
 .ftNav li a:first-child{padding-left: 0;}
 .container.ftBottom{padding: 20px 0;}
 .container.ftBottom .logo{
-    width: 50px;height: 50px;text-align: center;line-height: 100px;margin-right: 20px;
+    float: left;
+    width: 50px;height: 50px;text-align: center;line-height: 100px;margin-right: 20px;display: inline-block;
 }
-.container.ftBottom .addr{float: left;}
+.container.ftBottom .addr{float: left;color: #fff;}
+.container.ftBottom .addr span{color: #979499;}
 
 

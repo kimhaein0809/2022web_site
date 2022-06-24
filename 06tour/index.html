@@ -10,16 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/reset.css">
 </head>
 <body>
     <header id="header">
         <div class="headerTopWrap">
             <div class="headerTop container clearfix">
                 <h1 class="logo"><a href="#"><img src="images/logo_ko.png" alt=""></a></h1>
-                <div class="search"><p>search</p></div>
+                <div class="searchWrap">
+                    <form action="#">
+                        <input type="text" name="search" placeholder="검색어를 입력하세요" class="inp">
+                    </form>
+                    <p class="title">SEARCH</p>
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
                 <div class="right">
                     <p class="number">+82 02 1234 5678</p>
                     <ul>

@@ -65,7 +65,7 @@ p.number{
 .sec1st{padding-top: 56px;}
 .sec1st>ul>li{float: left;width: 233px;height: 240px;cursor: pointer;}
 .con1>li:nth-child(1){
-    float: left;width: 482px;height: 300px;margin-bottom: 16px;
+    float: left;width: 482px;height: 300px;margin-bottom: 16px;background-color: #fff;
 
 }
 .con1>li:nth-child(2){margin-right: 16px;background-image: url(../images/france.jpg);}
@@ -142,18 +142,27 @@ p.number{
     display: block;border: 1px solid #fff;width: 100px;border-radius: 20px;
     text-align: center;font-size: 14px;color: #fff;padding: 5px 0;margin: 20px;
 }
-.sec1st>ul>li:nth-child(7){background-image: url(../images/sea.jpg);}
-.sec1st>ul>li:nth-child(8){background-image: url(../images/forest.jpg);}
-.sec1st>ul>li:nth-child(9){background-image: url(../images/home.jpg);}
-.sec1st>ul>li:nth-child(10){margin-right: 0;background-image: url(../images/ball.jpg);}
-
-/* .air{
+.sec1st>ul>li:nth-child(7){background-image: url(../images/sea.jpg);position: relative;}
+.sec1st>ul>li:nth-child(7) p{
+    display: inline-block;padding: 10px 20px;
+    width: 233px;height: 240px;color: #fff;text-align: center;
+    padding: 80px 0;
+    background: rgba(0, 0, 0, 0.5);line-height: 20px;
+    font-size: 20px;
+}
+.sec1st>ul>li:nth-child(7) p>span{font-size: 14px;}
+.sec1st>ul>li:nth-child(7) img{position: absolute; bottom: 40px;left: 105px;}
+.sec1st>ul>li:nth-child(8){background-image: url(../images/forest.jpg);position: relative;}
+.sec1st>ul>li:nth-child(9){background-image: url(../images/home.jpg);position: relative;}
+.sec1st>ul>li:nth-child(10){margin-right: 0;background-image: url(../images/ball.jpg);position: relative;}
+/* 
+.air{
     transform: translate(-500%,500%);
     animation: air 5s forwards infinite linear;
 }
 @keyframes air{
     to{transform: translate(500%,-500%);}
-} */
+}
 
-
+ */
 

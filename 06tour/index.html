@@ -12,6 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/reset.css">
+    <script>
+        $(document).ready(function(){
+            $("#sdate,#edate").datepicker({
+                dateFormat: 'yy/mm/dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                dayNames: ['일','월','화','수','목','금','토'],
+                dayNamesShort: ['일','월','화','수','목','금','토'],
+                dayNamesMin: ['일','월','화','수','목','금','토'],
+                showMonthAfterYear: true,
+
+                yearSuffix: '년'
+            })
+        })
+    </script>
 </head>
 <body>
     <header id="header">
@@ -54,10 +71,55 @@
     
     <div class="section">
         <div class="sec1st container">
+            <img src="images/bll.png" alt="">
             <ul class="clearfix">
                 <li>
                     <ul class="con1 clearfix">
-                        <li>1</li>
+                        <li>
+                            <div class="formbody">
+                                <ul class="slide">
+                                    <li>
+                                        <form action="#">
+                                            <legend class="blind">여행일정</legend>
+                                            <div class="field">
+                                                <label for="gogo">가고싶은 나라를 선택하세요.</label>
+                                                <select name="golo">
+                                                    <option value="">선택하세요.</option>
+                                                    <option value="일본">일본</option>
+                                                    <option value="미국">미국</option>
+                                                </select>
+                                            </div>
+                                            <div class="field date">
+                                                <div class="left">
+                                                    <label for="sdate">출발일</label>
+                                                    <input type="date" id="sdate" class="inp-field">
+                                                </div>
+                                                <div class="right">
+                                                    <label for="edate">도착일</label>
+                                                    <input type="date" id="edate" class="inp-field">
+                                                </div>
+                                            </div>
+                                            <div class="field air">
+                                                <div>
+                                                    <label for="userseat">좌석등급</label>
+                                                    <select name="userseat" id="userseat">
+                                                        <option value="일반석">일반석</option>
+                                                    </select>
+                                                </div>
+                                                <div class="ad">
+                                                    <label for="usernum">성인</label>
+                                                    <input type="number" name="usernum" id="usernum" class="inp-field">
+                                                </div>
+                                                <div>
+                                                    <label for="usernum">아이</label>
+                                                    <input type="number" name="usernum" id="usernum" class="inp-field">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                         <li>2</li>
                         <li>3</li>
                     </ul>
@@ -66,9 +128,12 @@
                     <div class="txtWrap">
                         <h2>TRAVEL GO</h2>
                         <p>지금, 여행이 떠나고 싶다면?<br>모두투어와 여행을 떠나자!</p>
-                        <img src="images/bll.png" alt="">
+                        
                     </div>
                 </li>
+            </ul>
+
+            <ul class="clearfix">
                 <li>
                     <img src="images/s.png" alt="">
                     <p>사이판<span>1,900,000~</span></p>
@@ -85,6 +150,8 @@
                     <p>가족, 연인 <br>누구와 함께라도 <br>즐거울 여행지</p>
                     <a href="#">자세히보기</a>
                 </li>
+            </ul>
+            <ul class="clearfix">
                 <li>
                     <p>
                         여행정보<span><br>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</span>

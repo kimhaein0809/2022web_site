@@ -4,12 +4,12 @@ html,body{height: 100%;min-width: 1280px;}
 body{
     font-family: 'Nanum Gothic', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
-    background-image: url(../images/bgi.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
 }
+.section{background-image: url(../images/bgi.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;}
 
 #header{width: 100%;min-width: 1280px;}
 .container{
@@ -63,7 +63,7 @@ p.number{
 
 /* section */
 .sec1st{padding-top: 56px;}
-.sec1st>ul>li{float: left;width: 233px;height: 240px;cursor: pointer;}
+.sec1st>ul>li{float: left;width: 233px;height: 240px;}
 .con1>li:nth-child(1){
     float: left;width: 482px;height: 300px;margin-bottom: 16px;background-color: #fff;
 
@@ -79,7 +79,7 @@ p.number{
 .sec1st>ul>li:nth-child(1){width: 482px;height: 556px;}
 .sec1st>ul>li:nth-child(2){
     width: 482px;height: 556px;margin-right: 0;
-    margin-bottom: 16px;padding: 40px;
+    margin-bottom: 16px;padding: 40px;position: relative;
 }
 .sec1st>ul>li:nth-child(2) h2{
     font-size: 68px;line-height: 68px;
@@ -89,7 +89,7 @@ p.number{
     font-size: 32px;line-height: 32px;margin-top: 40px;
 }
 .sec1st>ul>li:nth-child(2) img{
-    position: absolute;right: 350px;top: 320px;z-index: -999;
+    position: absolute;right: -200px;top: 100px;z-index: 1;
     animation: bal 2s infinite alternate
 }
 

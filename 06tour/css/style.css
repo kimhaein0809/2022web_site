@@ -78,6 +78,7 @@ p.number{
 .formL{width: 132px;height: 300px;background-color: #fff;}
 .formR{display: inline-block;padding: 20px;background-color: #fff;}
 .formR>ul>li{width: 350px;}
+.conL{margin-right: 16px;}
 .conR{display: inline-block;padding: 30px;}
 .conR h2{font-size: 68px;line-height: 68px;}
 .conR p{font-size: 32px;line-height: 32px;margin-top: 40px;}

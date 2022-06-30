@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모두투어</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        $(document).ready(function(){
+            $("#sdate,#edate").datepicker({
+                dateFormat: 'yy/mm/dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                dayNames: ['일','월','화','수','목','금','토'],
+                dayNamesShort: ['일','월','화','수','목','금','토'],
+                dayNamesMin: ['일','월','화','수','목','금','토'],
+                showMonthAfterYear: true,
+
+                yearSuffix: '년'
+            })
+        })
+    </script>
+</head>
+<body>
+    <header id="header">
+        <div class="headerTopWrap">
+            <div class="headerTop container clearfix">
+                <h1 class="logo"><a href="#"><img src="images/logo.png" alt=""></a></h1>
+                <div class="searchWrap">
+                    <form action="#">
+                        <input type="text" name="search" placeholder="검색어를 입력하세요." class="inp">
+                    </form>
+                    <p class="title">SEARCH</p>
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="right clearfix">
+                    <p class="number">+82 02 1234 5678</p>
+                    <ul class="clearfix">
+                        <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+                        <li><a href="#"></a><img src="images/youtube.png" alt=""></li>
+                        <li><a href="#"><img src="images/google.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mainMenuWrap">
+            <nav class="navbar container">
+                <ul class="clearfix">
+                    <li><a href="#">여행도시</a></li>
+                    <li><a href="#">호텔예약</a></li>
+                    <li><a href="#">렌트카</a></li>
+                    <li><a href="#">여행TIP</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="secWrap"> <!-- 100% bgi -->
+        <div class="secsec container"> <!-- 980 m-auto -->
+            <div class="sec1st">
+                <div class="conL">
+                    <div class="tt">
+                        <div class="formL"></div>
+                        <div class="formR">
+                            <ul class="slide">
+                                <li>
+                                    <form action="#">
+                                        <legend class="blind">여행일정</legend>
+                                        <div class="field">
+                                            <label for="gogo">가고싶은 나라를 선택하세요.</label>
+                                            <select name="golo">
+                                                <option value="">선택하세요.</option>
+                                                <option value="일본">일본</option>
+                                                <option value="미국">미국</option>
+                                            </select>
+                                        </div>
+                                        <div class="field date">
+                                            <div class="left">
+                                                <label for="sdate">출발일</label>
+                                                <input type="date" id="sdate" class="inp-field">
+                                            </div>
+                                            <div class="right">
+                                                <label for="edate">도착일</label>
+                                                <input type="date" id="edate" class="inp-field">
+                                            </div>
+                                        </div>
+                                        <div class="field air">
+                                            <div>
+                                                <label for="userseat">좌석등급</label>
+                                                <select name="userseat" id="userseat">
+                                                    <option value="일반석">일반석</option>
+                                                </select>
+                                            </div>
+                                            <div class="ad">
+                                                <label for="usernum">성인</label>
+                                                <input type="number" name="usernum" id="usernum" class="inp-field">
+                                            </div>
+                                            <div>
+                                                <label for="usernum">아이</label>
+                                                <input type="number" name="usernum" id="usernum" class="inp-field">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bb">
+                        <div class="conBox b1">
+                            <img src="images/saipan.jpg" alt="">
+                        </div>
+                        <div class="conBox b2">
+                            <img src="images/saipan.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="conR">
+                    <h2>TRAVEL GO</h2>
+                    <p>지금, 여행이 떠나고 싶다면?<br>모두투어와 여행을 떠나자!</p>
+                </div>
+            </div>
+            <div class="sec2st">
+                <ul class="clearfix">
+                    <li>
+                        <img src="images/saipan.jpg" alt="">
+                        <p>사이판<span>1,900,000 ~<br></span>★★★★☆</p>
+                    </li>
+                    <li>
+                        <img src="images/hawaii.jpg" alt="">
+                        <p>하와이<span>1,900,000 ~<br></span>★★★★☆</p>
+                    </li>
+                    <li>
+                        <img src="images/weather.jpg" alt="">
+                        <p>27.1° 구름 조금<br><span>습도 60% 바람 남남동 2m/s</span></p>
+                    </li>
+                    <li>
+                        <img src="images/honey.jpg" alt="">
+                        <div class="txt">
+                            <h3>찾았다! 인생여행지</h3>
+                            <p>가족, 연인 <br>누구와 함께라도 <br>즐거울 여행지</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sec3st">
+                <ul class="clearfix">
+                    <li>
+                        <img src="images/saipan.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/saipan.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/saipan.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/saipan.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    

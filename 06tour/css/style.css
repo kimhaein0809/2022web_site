@@ -98,7 +98,7 @@ p.number{
     display: inline-block;padding: 10px 20px;
     width: 233px;height: 64px;color: #fff;
     background: rgba(117, 197, 76, 0.9);line-height: 20px;
-    position: absolute;font-size: 18px;bottom: 37px;
+    position: absolute;font-size: 18px;bottom: 64px;
 }
 .sec2st>ul>li:nth-child(1) p>span,.sec2st>ul>li:nth-child(2) p>span{
     padding-left: 20px;color: #d9ff03;
@@ -107,7 +107,7 @@ p.number{
     display: inline-block;padding: 10px 20px;
     width: 233px;height: 64px;color: #fff;
     background: rgba(0, 0, 0, 0.7);line-height: 20px;
-    position: absolute;bottom: 37px;font-size: 18px;
+    position: absolute;bottom: 64px;font-size: 18px;
 }
 .sec2st>ul>li:nth-child(3) p>span{font-size: 14px;}
 

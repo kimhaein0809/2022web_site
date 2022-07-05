@@ -341,12 +341,47 @@ p.number{
     border: 2px solid #ccc;
 }
 
-/* sub01 citytour */
+/* sub01 package */
+.section2{width: 100%;}
+.contents.subpage.package .visual{
+    background-image: url(../images/gggg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    
+}
+.contents.subpage.package .visual .txtWrap p{
+    color: white;
+}
+.contents.subpage.package .visual .txtWrap h3{
+    font-size: 3em;color: white;padding-bottom: 10px;
+}
+/* sub02 travle */
+
+.contents.subpage.travel .visual{
+    background-image: url(../images/paris.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    
+}
+.contents.subpage.travel .visual .txtWrap p{
+    color: white;
+}
+.contents.subpage.travel .visual .txtWrap h3{
+    font-size: 3em;color: white;padding-bottom: 10px;
+}
+
+
+
+
+
+/* sub03 tour */
 .contents.subpage{
     /* background: skyblue; */
     padding-bottom: 50px;
 }
-.contents.subpage .visual{
+.contents.subpage.tour .visual{
     background-image: url(../images/jeju.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -369,6 +404,54 @@ p.number{
 }
 .container.section{
     box-shadow: 0 0 5px 0px rgb(0 0 0 / 30%);
+}
+
+/* sub04 jeju */
+
+.contents.subpage.jeju .visual{
+    background-image: url(../images/jejui.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    
+}
+.contents.subpage.jeju .visual .txtWrap p{
+    color: white;
+}
+.contents.subpage.jeju .visual .txtWrap h3{
+    font-size: 3em;color: white;padding-bottom: 10px;
+}
+
+/* sub05 flight */
+
+.contents.subpage.flight .visual{
+    background-image: url(../images/main_bg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    
+}
+.contents.subpage.flight .visual .txtWrap p{
+    color: white;
+}
+.contents.subpage.flight .visual .txtWrap h3{
+    font-size: 3em;color: white;padding-bottom: 10px;
+}
+
+/* sub06 hotel */
+
+.contents.subpage.hotel .visual{
+    background-image: url(../images/bg_main01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    
+}
+.contents.subpage.hotel .visual .txtWrap p{
+    color: white;
+}
+.contents.subpage.hotel .visual .txtWrap h3{
+    font-size: 3em;color: white;padding-bottom: 10px;
 }
 
 /* common  */

@@ -1,3 +1,8 @@
+console.log("test")
+
+
+
+
 
 let view = true;
 $(".toggleMenu").click(function(){

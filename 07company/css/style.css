@@ -3,11 +3,13 @@
 
 @font-face {font-family:MalgunGothic; src:url(/07company/font/MalgunGothic.eot);}
 html,body{height: 100%;}
-body{font-family: 'Malgun Gothic'!important;}
+body{font-family: 'Noto Sans KR', sans-serif;}
 .container{width: 1240px;margin: 0 auto}
 
 /* header */
-#header{position: fixed;width: 100%;}
+#header{
+    position: fixed;width: 100%;z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);}
 #header.fixed{
     position: fixed;
     background-color:rgba(0, 0, 0, 0.5);
@@ -35,8 +37,9 @@ body{font-family: 'Malgun Gothic'!important;}
     transform: scale(0);transition: .3s;
 }
 .navbar>ul>li .submenu{
-    background-color: white;
-    position: absolute;top: 82px;width: 100%;padding: 10px 10px 20px 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;top: 84px;width: 100%;padding: 10px 10px 20px 10px;
     border-radius: 0 0 8px 8px;transform: translateY(20px);transition: 0.3s;
     opacity: 0;visibility: hidden;box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 
@@ -51,7 +54,8 @@ body{font-family: 'Malgun Gothic'!important;}
 
 /* visual */
 
-.visualWrap>ul>li{
+.visualWrap{
+    background-image: url(../images/main-slide-item-01-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,6 +84,113 @@ body{font-family: 'Malgun Gothic'!important;}
 
 
 .navbarClone,.overlay{display: none;}
+
+/* contents */
+
+.contents{
+    margin-top: -310px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.contents>ul{display: flex;flex-wrap: wrap;position: relative;}
+.contents>ul>li{
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 25%;
+    height: 310px;
+    cursor: pointer;
+}
+.contents>ul>li:nth-child(3),
+.contents>ul>li:nth-child(6),
+.contents>ul>li:nth-child(8),
+.contents>ul>li:nth-child(11){
+    flex-grow: 0;
+    flex-basis: 50%;
+    _width: 50%;
+}
+.contents>ul>li:nth-child(7){
+    height: 620px;
+}
+.contents>ul>li:nth-child(10){
+    flex-grow: 0;
+    position: absolute;right: 620px;bottom: 0;
+    width: 310px;
+}
+.contents>ul>li:nth-child(11){
+    flex-grow: 0;
+    position: absolute;right: 0;bottom: 0;
+    width: 620px;
+}
+.contents>ul>li:nth-child(1) h3,
+.contents>ul>li:nth-child(5) h3,
+.contents>ul>li:nth-child(9) h3,
+.contents>ul>li:nth-child(10) h3{
+    display: flex;
+    justify-content: center;align-items: center;color: white;
+}
+.contents>ul>li:nth-child(1),
+.contents>ul>li:nth-child(4),
+.contents>ul>li:nth-child(5),
+.contents>ul>li:nth-child(9),
+.contents>ul>li:nth-child(10){
+    display: flex;
+    justify-content: center;align-items: center;color: white;
+}
+.contents>ul>li:nth-child(1) img,
+.contents>ul>li:nth-child(4) img,
+.contents>ul>li:nth-child(5) img,
+.contents>ul>li:nth-child(9) img,
+.contents>ul>li:nth-child(10) img{
+    margin: 0 auto;margin-bottom: 10px;
+}
+.contents>ul>li:nth-child(1){background: #e52f42;}
+.contents>ul>li:nth-child(4){background: #f8f9fa;color: #000;}
+.contents>ul>li:nth-child(5){background: #313033;}
+.contents>ul>li:nth-child(9){background: #e52f42;}
+.contents>ul>li:nth-child(10){background: #313033;}
+
+.contents>ul>li:nth-child(2){
+    background: url(../images/video.jpg) no-repeat center;
+    display: flex;justify-content: center;align-items: center;
+}
+.contents>ul>li:nth-child(2):hover img{
+    transform: scale(1.2);
+}
+.contents>ul>li:nth-child(2) img{
+    transition: .3s;
+}
+
+.contents>ul>li:nth-child(6),
+.contents>ul>li:nth-child(7),
+.contents>ul>li:nth-child(8),
+.contents>ul>li:nth-child(11){
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.contents>ul>li:nth-child(7) h2,.contents>ul>li:nth-child(7) .txt,
+.contents>ul>li:nth-child(11) h2,.contents>ul>li:nth-child(11) .txt{color: white;}
+.contents>ul>li:nth-child(7) h2,
+.contents>ul>li:nth-child(11) h2{padding-bottom: 30px;}
+.contents>ul>li:nth-child(11) img{position: absolute;top: 125px;left: 150px;}
+.txt-card{
+    position: absolute;
+    left: 40px;top: 40px;
+}
+.contents>ul>li:nth-child(8){background: white;}
+.txt-card h2{
+    font-size: 36px;font-weight: 900;color: #313033;
+    padding-bottom: 10px;
+}
+/* .txt-card h2:after{
+    content: "";display: block;width: 100px;height: 3px;
+    background: black;margin: 15px 0;
+} */
+.txt-card .txt{font-size: 18px;padding-bottom: 90px;}
+.txt-card span{font-size: 16px;}
+.txt-card span:after{
+    content: "";display: block;width: 80px;height: 1px;
+    background: black;
+}
 
 /********** css responsive **********/
 @media (max-width: 1399px) {
@@ -167,3 +278,7 @@ body{font-family: 'Malgun Gothic'!important;}
 @media (max-width: 575px) {
 
 }
+
+
+/* common */
+.bg_gray{background: #eee !important;}

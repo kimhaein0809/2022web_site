@@ -35,11 +35,24 @@ $(window).scroll(function(){
     
     if( scrollY > 300 ){
         $("#header").addClass("fixed");
+        $(".navbarWrap>h1").addClass("fixed");
+        $(".navbar>ul>li>a").addClass("fixed");
+        $(".kor").addClass("fixed");
+        $(".eng").addClass("fixed");
+        $(".toggle div").addClass("fixed");
     }else{
         $("#header").removeClass("fixed");
+        $(".navbarWrap>h1").removeClass("fixed");
+        $(".navbar>ul>li>a").removeClass("fixed");
+        $(".kor").removeClass("fixed");
+        $(".eng").removeClass("fixed");
+        $(".toggle div").removeClass("fixed");
     }
     $(".scroll").html(parseInt(scrollY))
 })
+
+
+
 
 
 // $(document).ready(function(){

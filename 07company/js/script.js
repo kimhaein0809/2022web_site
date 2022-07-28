@@ -30,6 +30,10 @@ $(".lang>div").click(function(){
     $(this).addClass("active");
 })
 
+
+
+
+
 $(window).scroll(function(){
     let scrollY = window.pageYOffset;
     
@@ -50,6 +54,22 @@ $(window).scroll(function(){
     }
     $(".scroll").html(parseInt(scrollY))
 })
+
+// swiper
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
 
 
 

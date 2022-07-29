@@ -499,8 +499,14 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     background-repeat: no-repeat;
     background-size: cover;
     height: 280px;width: 100%;
+    background-attachment: fixed;
+    display: flex;justify-content: center;align-items: center;
+
 }
 .txtWrap3{text-align: center;}
+.txtWrap3>h3{font-size: 48px;color: white;margin-bottom: 20px;}
+.txtWrap3>p{font-size: 18px;color: white;margin-bottom: 30px;}
+.txtWrap3>a{display: flex;justify-content: center;align-items: center;}
 
 /********** css responsive **********/
 @media (max-width: 1399px) {
@@ -742,17 +748,18 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
  .contents>ul>li:nth-child(2){background-size: cover;}
     
-
+ .sec3{height: 400px;}
+ .txtWrap3>h3{font-size: 36px;color: white;margin-bottom: 20px;}
+ .txtWrap3>p{font-size: 16px;color: white;margin-bottom: 30px;}
+ .txtWrap3>a{display: flex;justify-content: center;align-items: center;}
 }
 
-.txtWrap2>ul>li>h4{font-size: 24px;}
-.txtWrap2>ul>li>p{font-size: 16px;}
-.title>p{font-size: 18px;}
-.title>h3{font-size: 36px;}
+
+
 
 
     
-
+/* swiper */
 
 
 
@@ -761,14 +768,10 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 @media (max-width: 575px) {
     .contents>ul>li:nth-child(3){height: 250px;}
     .sItems .sTxt,.sItems .sImg{height: 250px;}
-    .sBtn{}
-    
-    /* .contents>ul>li:nth-child(8){
-        transform: rotateY(180deg);
-    }
-    .contents>ul>li:nth-child(8) .txt-card{
-        transform: rotateY(180deg);
-    } */
+    .txtWrap2>ul>li>h4{font-size: 24px;}
+    .txtWrap2>ul>li>p{font-size: 16px;}
+    .title>p{font-size: 18px;}
+    .title>h3{font-size: 36px;}
     
 } 
 

@@ -508,12 +508,52 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .txtWrap3>p{font-size: 18px;color: white;margin-bottom: 30px;}
 .txtWrap3>a{display: flex;justify-content: center;align-items: center;}
 
+/* footer */
+#ft{background: #191919;color: #fff;}
+.ft-inner{display: flex;align-items: flex-start;padding:50px 0;position: relative;}
+.ft-logo{
+    flex-basis: 20%;margin-bottom: 0;
+}
+.ft-info{flex: 1;}
+.ft-info-link{margin-bottom: 10px;}
+.ft-info-link ul li{display: inline-block;margin-bottom: 10px;}
+.ft-info-link ul li a{color: #fff;}
+.ft-info-txt,.ft-info-msg{color: #999;letter-spacing: -.75px;line-height: 1.8;}
+.ft-info-copy{margin-top: 20px;color: #999}
+.ft-info-link ul>li:not(:last-child) a:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 0.75em;
+    margin: 0 1em;
+    background: #666;
+}
+.ft-family{
+    width: 158px;
+    height: 48px;
+    border: .5px solid #313033;
+
+}
+.ft-family p{
+    line-height: 48px;
+    color: #646464;
+    text-indent: 20px;
+}
+
+
+
+
+
+
+
+
 /********** css responsive **********/
 @media (max-width: 1399px) {
     .navbar>ul>li>a{
         padding: 30px 20px;
     }
     .txtWrap2 > ul > li {padding: 40px;}
+    
 
 }
 
@@ -547,7 +587,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     .contents>ul>li:nth-child(5),
     .contents>ul>li:nth-child(9),
     .contents>ul>li:nth-child(10){
-        height: initial;padding: 20px;
+        height: initial;padding: 50px;
     }
     .contents>ul>li:nth-child(1) img,
     .contents>ul>li:nth-child(3) img,
@@ -585,13 +625,47 @@ body{font-family: 'Noto Sans KR', sans-serif;}
         flex-basis: 50%;
         order: 10;
     }
+    .subbg{height: 1000px;}
+    /* footer */
 
+.ft-inner{display: block; padding:50px 30px;position: relative;}
+.ft-logo{
+    flex-basis: 20%;margin-bottom: 10px;
+}
+.ft-info{flex: 1;}
+.ft-info-link{margin-bottom: 10px;}
+.ft-info-link ul li{display: inline-block;margin-bottom: 10px;}
+.ft-info-link ul li a{color: #fff;}
+.ft-info-txt,.ft-info-msg{color: #999;letter-spacing: -.75px;line-height: 1.8;}
+.ft-info-copy{margin-top: 20px;color: #999}
+.ft-info-link ul>li:not(:last-child) a:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 0.75em;
+    margin: 0 1em;
+    background: #666;
+}
+.ft-family{
+    margin-top: 30px;
+    width: 158px;
+    height: 48px;
+    border: .5px solid #313033;
 
+}
+.ft-family p{
+    line-height: 48px;
+    color: #646464;
+    text-indent: 20px;
+}
+    
+    
 }
 
 @media (max-width: 991px) {
     .navbarWrap{padding: 10px 20px;}
     .txt{overflow: hidden;}
+    
 
 }
 

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js" integrity="sha512-naEQG74IcOLQ6K/B1PmhIcZ4i3YE2FXs2zm603E1Q3shbron+PmYLg44/q+xAymD/RvskZ2H8l1Qa7I5qELlrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css" integrity="sha512-5TGRCl3hPoqtruhO+mubTuySHOfcEBvyIfiWHoCK8wDLmf6C1U73OUoNCU6ZvyT/8vfCcha1INDIo8dabDmQjw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        $(document).ready(function(){
+            var slide = $(".slider").bxSlider({
+                controls:false,
+                auto:true,
+                mode:'fade'
+            });
+            $(".next").click(function(){
+                slide.goToNextSlide();
+            });
+
+            $(".prev").click(function(){
+                slide.goToPrevSlide();
+            });
+        
+        })
+        $(document).ready(function(){
+            var slide = $(".slide1").bxSlider({
+                controls:false,
+                auto:true,
+                mode:'fade',
+                speed:500,
+                autoDelay:0
+            });
+            $(".snext").click(function(){
+                slide.goToNextSlide();
+            });
+
+            $(".sprev").click(function(){
+                slide.goToPrevSlide();
+            });
+        
+        })
+    </script>
+    
+</head>
+<body>
+    <header id="header">
+        <div class="navbarWrap container">
+            <h1 class="hd-logo text-hide">
+                <a href="#">안국약품(주)</a>
+            </h1>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="introduction.html">회사소개 <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">VISION</a></li>
+                            <li><a href="#">CI 소개</a></li>
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="#">IR</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                        <div class="aBar"></div>
+                    </li>
+                    <li><a href="pr.html">제품정보 <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">제품소식</a></li>
+                            <li><a href="#">제품검색</a></li>
+                        </ul>
+                        <div class="aBar"></div>
+                    </li>
+                    <li><a href="product.html">연구개발 <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">R&D VISION</a></li>
+                            <li><a href="#">연혁 및 연구실적</a></li>
+                            <li><a href="#">연구개발품목</a></li>
+                            <li><a href="#">PRODUCT PIPELINE</a></li>
+                        </ul>
+                        <div class="aBar"></div>
+                    </li>
+                    <li><a href="promotion.html">홍보센터 <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">안국뉴스룸</a></li>
+                            <li><a href="#">안국홍보관</a></li>
+                            <li><a href="#">소셜미디어</a></li>
+                        </ul>
+                        <div class="aBar"></div>
+                    </li>
+                    <li><a href="recruitment.html">채용정보 <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">인재상</a></li>
+                            <li><a href="#">복리후생</a></li>
+                            <li><a href="#">채용공고</a></li>
+                        </ul>
+                        <div class="aBar"></div>
+                    </li>
+                    <li><a href="customer.html">고객지원 <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">고객게시판</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                            <li><a href="#">사이버감사팀</a></li>
+                        </ul>
+                        <div class="aBar"></div>
+                    </li>
+                    <div class="lang">
+                        <div class="kor">KOR</div>
+                        <div class="eng">ENG</div>
+                    </div>
+                </ul>
+            </nav>
+            <div class="toggle">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="navbarClone">
+            <div class="mMenu">
+                
+            </div>
+        </div>
+    </header>
+    <footer id="ft">
+        <div class="container">
+            <div class="ft-inner">
+                <div class="ft-logo">
+                    <a href="#"><img src="images/footlogo.png" alt=""></a>
+                </div>
+                <div class="ft-info">
+                    <nav class="ft-info-link">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">이메일무단수집거부</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="ft-info-txt">
+                        <li>150-953 서울 영등포구 시흥대로 613</li>
+                        <li>대표전화 02) 3289-4200</li>
+                        <li>대표자명 : 원덕권</li>
+                        <li>사업자등록번호 : 118-81-04188</li>
+                    </ul>
+                    <p class="ft-info-msg">[SSL 보안프로그램적용] 안국약품은 더욱 안심하고 신뢰 할 수 있는 서비스를 제공하기 위해 최선을 다하겠습니다.</p>
+                    <p class="ft-info-copy">COPYRIGHT(C) 2022 BY AHNGOOK PHARM ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="ft-family"> <!-- float right -->
+                    <a href="#">
+                        <p>Family Site</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

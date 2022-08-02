@@ -82,13 +82,13 @@ $(document).ready(function(){
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 0,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      }
     },
     breakpoints: {
       0: {
@@ -104,7 +104,7 @@ $(document).ready(function(){
         spaceBetween: 0
       },
       1024: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 0
       }
     }

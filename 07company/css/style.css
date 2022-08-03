@@ -58,7 +58,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .navbar>ul>li>a{
     height: 100%;display: flex;justify-content: center;align-items: center;
-    padding: 30px 20px;font-size: 18px;color: white;
+    padding: 30px 30px;font-size: 18px;color: white;
 }
 .navbar>ul>li i{display: none;}
 .navbar>ul>li .aBar{
@@ -541,6 +541,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 }
 
 
+
+/* sub */
 
 
 

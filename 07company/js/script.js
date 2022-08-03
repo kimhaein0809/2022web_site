@@ -9,7 +9,7 @@ $(".navbar>ul>li").hover(function(){
 
 $(".navbar>ul").clone().appendTo(".mMenu")
 
-$(".menu>li>a").click(function(e){
+$(".mMenu>.menu>li>a").click(function(e){
     e.preventDefault();
     $(".menu>li>a").parent().find(".submenu").slideUp() //#3
     if( $(this).hasClass("active")){  //#4

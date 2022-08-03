@@ -8,7 +8,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 /* header */
 #header{
     position: fixed;width: 100%;z-index: 100;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);}
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
 #header.fixed{
     position: fixed;
     background-color:white;
@@ -404,7 +405,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     background: white;
 }
 
-.contents2>ul>li:nth-child(2n){background: skyblue;}
 .contents2 .txtWrap{
     height: 620px;width: 310px;
     background: #e52f42;
@@ -459,6 +459,23 @@ body{font-family: 'Noto Sans KR', sans-serif;}
   object-fit: cover;
 }
 .swiper ul li{width: 310px;height: 310px;}
+
+.swiper .swiper-horizontal>.swiper-pagination-bullets,
+.swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none;
+}
+.swiper .swiper-button-next{
+    background-image: url(../images/right.png);
+    background-repeat:no-repeat;
+    position: absolute;top:auto;bottom:5px;left:110px;z-index:3;
+}
+.swiper .swiper-button-prev{
+    background-image: url(../images/left.png);
+    background-repeat:no-repeat;
+    position:absolute;top:auto;bottom:-5px;z-index:3;
+}
+/* .swiper .swiper-button-next:after,
+.swiper .swiper-button-prev:after{visibility:hidden;} */
 .newstWrap,.newstWrap2{padding: 25px;position: relative;}
 .newstWrap:before{
     content: "";
@@ -544,6 +561,50 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 /* sub */
 
+.subVisual{
+    height: 500px;
+    display: flex;justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.subVisual .txtWrap{color:white;text-align: center;}
+.subVisual h2{
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    font-size: 60px;
+}
+
+
+.subVisual.introduction{background-image: url(../images/sub-hd-greetings\ \(1\).jpg);}
+
+
+.sub{margin-top: -50px;}
+.sub .tab{display: flex;}
+.sub .tab li{
+    flex:1 1 25%;height: 50px;
+    display: flex;justify-content: center;align-items: center;
+    background: #fff;
+    cursor: pointer;
+    border-bottom: 2px solid #e52f42;
+    border-right: 1px solid #EDEDED;
+}
+.sub .tab li:last-child{border-right: none;}
+
+.sub .tab li.active{
+    background: #e52f42;
+    color: white;
+}
+.sub .content>div{
+    display: none;
+    border: 1px solid #000;
+    padding: 30px;
+    border-top: 0 none;
+}
+.sub .content div:nth-child(1){display: block;}
+.sub .content h2{text-align: center;margin-bottom: 30px;}
+.sub .locat{text-align: right;margin-bottom: 10px;}
 
 
 
@@ -667,7 +728,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 @media (max-width: 991px) {
     .navbarWrap{padding: 10px 20px;}
     .txt{overflow: hidden;}
-    
+  
 
 }
 

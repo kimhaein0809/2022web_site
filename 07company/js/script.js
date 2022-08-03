@@ -54,13 +54,12 @@ $(window).scroll(function(){
     }
     $(".scroll").html(parseInt(scrollY))
 })
-
 $(document).ready(function(){
-    $(".youtube").colorbox({
-        iframe:true,
-        innerWidth:1120,
-        innerHeight:630
-    })
+  $(".youtube").colorbox({
+      iframe:true,
+      innerWidth:1120,
+      innerHeight:630
+  })
 });
 
 // swiper
@@ -151,3 +150,29 @@ $(document).ready(function(){
         view = true;
     }
 })
+let params = new URLSearchParams(location.search);
+console.log(params.get("submenu"))
+
+
+function tab(){
+    $(".tab li").click(function(){
+        let i = $(this).index();
+        $(".tab li").removeClass("active");
+        $(this).addClass("active")
+
+        $(".content>div").hide().eq(i).show()
+    })
+}
+
+
+function views(i){
+    if( i != null){
+        $(".tab li").removeClass("active").eq(i).addClass("active");
+        $(".content>div").hide().eq(i).show();
+        tab();
+    }else{
+        tab();
+    }
+}
+
+views( params.get("submenu") )

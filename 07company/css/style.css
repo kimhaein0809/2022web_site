@@ -219,6 +219,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     box-shadow: 0 0 0px #ccc ;
     border: 0px none;
 }
+.bx-wrapper .bx-pager {display: none;}
 
 .visualWrap .bx-wrapper .bx-pager,
 .visualWrap .bx-wrapper .bx-controls-auto {
@@ -432,6 +433,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .swiper {
   width: 930px;
   height: 100%;
+  
+
 }
 
 .swiper-slide {
@@ -598,13 +601,28 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 }
 .sub .content>div{
     display: none;
-    border: 1px solid #000;
     padding: 30px;
     border-top: 0 none;
 }
 .sub .content div:nth-child(1){display: block;}
-.sub .content h2{text-align: center;margin-bottom: 30px;}
-.sub .locat{text-align: right;margin-bottom: 10px;}
+.sub .content h2{text-align: center;margin-bottom: 30px;font-size: 48px;}
+.sub .content h2:before{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #e52f42;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.sub .locat{text-align:left;margin-bottom: 10px;font-weight: bold;}
+.locat i{margin-right: 5px;}
+.locat .main{color: #bbb;}
+.locat .sub{color: #e52f42;}
+.sub .content .dot{
+    width: 10px;height: 10px;border-radius: 50%;background-color: #e52f42;
+
+}
 
 
 
@@ -884,6 +902,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 
  .contents>ul>li:nth-child(2){background-size: cover;}
+
+ .contents2 .txtWrap h3{}
     
  .sec3{height: 400px;}
  .txtWrap3>h3{font-size: 36px;color: white;margin-bottom: 20px;}

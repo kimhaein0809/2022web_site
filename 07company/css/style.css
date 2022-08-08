@@ -581,6 +581,10 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 
 .subVisual.introduction{background-image: url(../images/sub-hd-greetings\ \(1\).jpg);}
+.subVisual.pr{background-image: url(../images/sub2-2.jpg);}
+.subVisual.product{background-image: url(../images/sub-hd-rndhistory.png);}
+.subVisual.promotion{background-image: url(../images/sub-hd-news.png);}
+.subVisual.recruitment{background-image: url(../images/sub-hd-personnel.jpg);}
 
 
 .sub{margin-top: -50px;}
@@ -619,10 +623,10 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .locat i{margin-right: 5px;}
 .locat .main{color: #bbb;}
 .locat .sub{color: #e52f42;}
-.sub .content .dot{
-    width: 10px;height: 10px;border-radius: 50%;background-color: #e52f42;
-
+.content img{
+   width: 1180px;margin: 0 auto;
 }
+.content p{text-align: center;}
 
 
 

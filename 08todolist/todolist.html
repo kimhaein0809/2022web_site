@@ -72,7 +72,7 @@
             background: white;
             border: none;
             border-radius: 5px;
-            color: #FFB388;
+            color: #FFC149;
             font-size: 30px;
         }
         </style>
@@ -165,7 +165,6 @@
 
             todoData = '';
             listData.forEach(function(item,i){
-                // console.log(item.todo)
                 console.log(listData[i]["todo"]);
                 todoData += `<li>`
                 if( item.done == true){
@@ -176,7 +175,6 @@
 
                 todoData += `    <div class="iconWrap">`
                 todoData += `        <a href="#" onclick="del(${i})"><i class="fa-solid fa-trash-can"></i></a>`
-                //todoData += `        <a href="#" onclick="">M</a>`
 
                 if( item.done == true){  
                     todoData += `        <a href="#" onclick="done(${i})"><i class="fa-solid fa-square-check"></i></a>`

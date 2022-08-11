@@ -6,5 +6,4 @@
 1. neofore https://kimhaein0809.github.io/2022web_site/05neofore
 1. tour https://kimhaein0809.github.io/2022web_site/06tour
 1. company https://kimhaein0809.github.io/2022web_site/07company
-1. todolist https://kimhaein0809.github.io/2022web_site/08todolist
 1. bootstrap https://kimhaein0809.github.io/2022web_site/09bootstrap

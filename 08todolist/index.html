@@ -18,15 +18,22 @@
             line-height: 40px;
             margin-bottom: 2px;
             cursor: pointer;
+            
         }
     
         .viewData li .txt{
             padding: 0 16px;border-radius: 10px;color: white;
             width: 400px;
         }
+        
+        .viewData li .txt.active .line{
+            background: rgba(255, 100, 100, 0.3);width: 300px;height: 20px;
+            position: absolute;top: 10px;border-radius: 5px;
+        }
+        
         .viewData .iconWrap{
             display: flex;position: absolute;
-            gap:10px;right: 0px;top: 10px;
+            gap:10px;right: 0px;top: 6px;
             
         }
         .viewData .iconWrap a{
@@ -168,7 +175,7 @@
                 console.log(listData[i]["todo"]);
                 todoData += `<li>`
                 if( item.done == true){
-                    todoData += `    <div class="txt active"  onclick="done(${i})">${listData[i]["todo"]}</div>`
+                    todoData += `    <div class="txt active"  onclick="done(${i})">${listData[i]["todo"]}<div class="line"></div></div>`
                 }else{
                     todoData += `    <div class="txt"  onclick="done(${i})">${listData[i]["todo"]}</div>`
                 }

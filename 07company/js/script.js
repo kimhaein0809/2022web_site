@@ -62,21 +62,7 @@ $(document).ready(function(){
   })
 });
 
-// swiper
 
-
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 3,
-//     spaceBetween: 0,
-//     slidesPerGroup: 3,
-//     loop: true,
-//     loopFillGroupWithBlank: true,
-
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev"
-//     }
-//   });
 
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
@@ -109,24 +95,6 @@ $(document).ready(function(){
     }
   });
 
-
-
-// $(document).ready(function(){
-    //     $('.slide').bxSlider({
-//         controls:false,
-//         auto:true,
-//         mode:'fade'
-//     });
-//     $(".next").click(function(){
-    //         slide.goToNextSlide();
-    //     });
-    
-    //     $(".prev").click(function(){
-        //         slide.goToPrevSlide();
-        //     });
-        // });
-        
-        
         let view = true;
         $(".overlay").click(function(){
             $(".navbarClone").css("right","-100%")

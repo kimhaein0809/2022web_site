@@ -1,3 +1,42 @@
 @charset "utf-8";
 
+:root{
+    --bg-color1:#777;
+}
+.btn-gray{background: var(--bg-color1);}
+
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+.h-609{height: 609px;}
 .dropdown:hover .dropdown-menu{display: block;}
+.navbar-toggler{border: none;}
+.navbar{background: transparent;}
+/* visual */
+
+.visual{
+    background-image: url(../images/visual_1.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.visual h2{font-size: 54px;font-weight: 900;color: #e22727}
+.visual p{font-size: 22px;font-weight: bold;}
+
+/* cont-1st */
+.cont-1st{background: #383838;}
+.cont-1st h3{font-size: 44px;font-weight: 500;}
+.cont-1st p{font-size: 22px;}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 185px;
+    margin: 5.5rem 0 0;
+    padding: 8px 15px 8px 25px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn:hover{background: #424242;}

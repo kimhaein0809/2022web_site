@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>안국약품(주)</title>
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -259,6 +259,30 @@
 
     //depth2
 
+    
+    let params = new URLSearchParams(location.search);
+    console.log(params.get("submenu"))
+    
+    function tab(){
+        $(".tab li").click(function(){
+            let i = $(this).index();
+            $(".tab li").removeClass("active");
+            $(this).addClass("active")
+    
+            $(".content>div").hide().eq(i).show()
+        })
+    }
+
+    function views(i){
+        if( i != null){
+            $(".tab li").removeClass("active").eq(i).addClass("active");
+            $(".content>div").hide().eq(i).show();
+            tab();
+        }else{
+            tab();
+        }
+    }
+    views( params.get("submenu") )
 </script>
 </body>
 </html>

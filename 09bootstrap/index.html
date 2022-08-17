@@ -8,90 +8,179 @@
 
     <!-- Bootstrap CSS v5.2.0-beta1 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #F4F4F4;">
-          <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/img_logo_black.png" alt="" width="98" height="46" class="d-inline-block align-text-top">
-            </a>
+    <nav class="navbar navbar-light navbar-expand-md fixed-top">
+        <div class="container position-relative">
+        <a class="navbar-brand" href="#">LOGO</a>
 
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </div>
 
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link px-4" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">재단 소개</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">비전과 하는 일</a>
-                            <a class="dropdown-item" href="#">성과 및 연혁</a>
-                            <a class="dropdown-item" href="#">오시는 길</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link px-4" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">사업 소개</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">사업모델 개발</a>
-                            <a class="dropdown-item" href="#">세상파일</a>
-                            <a class="dropdown-item" href="#">SK 뉴스쿨</a>
-                            <a class="dropdown-item" href="#">곧장기부</a>
-                            <a class="dropdown-item" href="#">사업모델 엑셀러레이팅</a>
-                            <a class="dropdown-item" href="#">Social Innovators Table(SIT)</a>
-                            <a class="dropdown-item" href="#">CSAP</a>
-                            <a class="dropdown-item" href="#">Sunny</a>
-                            <a class="dropdown-item" href="#">LOOKIE</a>
-                        </div>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link px-4" href="#">뉴스룸</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="#">인재영입</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="#">ENG</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LOGO</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link px-4" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">재단 소개</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">비전과 하는 일</a>
+                        <a class="dropdown-item" href="#">성과 및 연혁</a>
+                        <a class="dropdown-item" href="#">오시는 길</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link px-4" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">사업 소개</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">사업모델 개발</a>
+                        <a class="dropdown-item" href="#">세상파일</a>
+                        <a class="dropdown-item" href="#">SK 뉴스쿨</a>
+                        <a class="dropdown-item" href="#">곧장기부</a>
+                        <a class="dropdown-item" href="#">사업모델 엑셀러레이팅</a>
+                        <a class="dropdown-item" href="#">Social Innovators Table(SIT)</a>
+                        <a class="dropdown-item" href="#">CSAP</a>
+                        <a class="dropdown-item" href="#">Sunny</a>
+                        <a class="dropdown-item" href="#">LOOKIE</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link px-4" href="#">뉴스룸</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="#">인재영입</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="#">ENG</a>
+                </li>
+            </ul>
+            
+          </div>
+        </div>
       </div>
     </nav>
     <div class="visual py-5 position-relative">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 align-self-center order-2 order-md-1 text-center text-md-start py-5">
-                    <h2 class="py-5">
-                        창의적이고 지속가능한<br>사업모델을 만듭니다
-                    </h2>
-                    <p>
-                        행복나눔재단
-                    </p>
+        <div class="visual-cont">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-6 order-2 order-md-1 text-center text-md-start py-5">
+                        <h2 class="py-5">
+                            창의적이고 지속가능한<br>사업모델을 만듭니다
+                        </h2>
+                        <p>
+                            행복나눔재단
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="py-5 cont-1st">
-        <div class="container h-609">
+    <div class="cont-1st position-relative">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6 align-self-center order-2 order-md-1 text-center text-md-start px-5 text-white">
+                <div class="col-md-6 align-self-center order-2 order-md-1 text-center text-white text-md-start px-5 left">
                     <h3 class="mb-5">
                         실험적인 사회변화 프로젝트를<br>개발합니다
                     </h3>
                     <p>
                         행복나눔재단은 사회변화 실험으로서<br>사회문제 해결을 향해 나아갑니다.
                     </p>
-                    <a href="#" class="btn btn-gray text-white">자세히 보기</a>
+                    <a href="#" class="btn btn-gray text-white btn1">
+                        <p>자세히 보기</p>
+                        <div class="btnWrap">
+                            <i class="arr"></i>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-6 p-5 order-1 order-md-2">
-                    <div class="item1"></div>
-                    <div class="item2"></div>
+                    <div class="bg item1"></div>
+                    <div class="bg item2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont-2st position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center order-2 order-md-1 text-center text-white text-md-start px-5 left">
+                    <span class="sp">사업모델 개발</span>
+                    <h3 class="mb-5">
+                        실질적인 사회문제 해결을 위해<br>다양한 사업모델을 개발합니다
+                    </h3>
+                    <a href="#" class="btn btn-red text-white btn2">
+                        <p>자세히 보기</p>
+                        <div class="btnWrap">
+                            <i class="arr"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 p-5 order-1 order-md-2">
+                    <div class="bg item3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont-3st position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center order-2 order-md-1 text-center text-white text-md-start px-5 left">
+                    <span class="sp">사업모델 엑셀러레이팅</span>
+                    <h3 class="mb-5">
+                        혁신적인 솔루션을 보유한<br>다양한 사업모델을 액셀러레이팅 합니다
+                    </h3>
+                    <a href="#" class="btn btn-yellow text-white btn3">
+                        <p>자세히 보기</p>
+                        <div class="btnWrap">
+                            <i class="arr"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 p-5 order-1 order-md-2">
+                    <div class="bg item4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont-4st">
+        <div class="container py-5">
+            <h2 class="mb-5">새로운 소식</h2>
+            <div class="row py-5 px-4 white">
+                <div class="col-md-4">
+                    <div class="card text-center text-md-start">
+                        <img class="card-img-top mb-3" src="images/20220810021358814.png" alt="Title">
+                        <div class="card-body">
+                            <h4 class="card-title">써니루키팀 청년 사회혁신가 육성사업 기획 담당 영입</h4>
+                            <p class="card-text">2022-08-10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center text-md-start">
+                        <img class="card-img-top mb-3" src="images/20220802042502510.png" alt="Title">
+                        <div class="card-body">
+                            <h4 class="card-title">2022 LOOKIE 하반기 신입구성원 모집</h4>
+                            <p class="card-text">2022-08-02</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center text-md-start">
+                        <img class="card-img-top mb-3" src="images/20220720101856782.png" alt="Title">
+                        <div class="card-body">
+                            <h4 class="card-title">치매 예방 디지털 인지훈련 참여 기관 모집</h4>
+                            <p class="card-text">2022-07-18</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,5 +189,6 @@
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -11,13 +11,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
 
   </head>
   <body>
     <nav class="navbar navbar-light navbar-expand-md fixed-top">
         <div class="container position-relative">
-        <a class="navbar-brand" href="#">LOGO</a>
+        <a class="navbar-brand logo" href="#">
+            <img src="images/img_logo_black.png" alt="" class="max">
+        </a>
 
         <div class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar">
@@ -27,32 +31,37 @@
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LOGO</h5>
+            <h5 class="offcanvas-title logo2" id="offcanvasNavbarLabel">
+                <a href="#"><img src="images/img_logo_white.png" alt="" class="max"></a>
+            </h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown position-relative">
                     <a class="nav-link px-4" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">재단 소개</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">비전과 하는 일</a>
-                        <a class="dropdown-item" href="#">성과 및 연혁</a>
-                        <a class="dropdown-item" href="#">오시는 길</a>
+                    <div class="dropdown-menu ms-4 py-3 px-2 mt-3" aria-labelledby="dropdownId" >
+                        <a class="dropdown-item small" href="#">비전과 하는 일</a>
+                        <a class="dropdown-item small" href="#">성과 및 연혁</a>
+                        <a class="dropdown-item small" href="#">오시는 길</a>
                     </div>
+                    <!-- <div class="aBar"></div> -->
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown position-relative">
                     <a class="nav-link px-4" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">사업 소개</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">사업모델 개발</a>
-                        <a class="dropdown-item" href="#">세상파일</a>
-                        <a class="dropdown-item" href="#">SK 뉴스쿨</a>
-                        <a class="dropdown-item" href="#">곧장기부</a>
-                        <a class="dropdown-item" href="#">사업모델 엑셀러레이팅</a>
-                        <a class="dropdown-item" href="#">Social Innovators Table(SIT)</a>
-                        <a class="dropdown-item" href="#">CSAP</a>
-                        <a class="dropdown-item" href="#">Sunny</a>
-                        <a class="dropdown-item" href="#">LOOKIE</a>
+                    <div class="dropdown-menu ms-4 py-3 px-2 mt-3" aria-labelledby="dropdownId">
+                        <a class="dropdown-item middle" href="#">사업모델 개발</a>
+                        <a class="dropdown-item small" href="#">세상파일</a>
+                        <a class="dropdown-item small" href="#">SK 뉴스쿨</a>
+                        <a class="dropdown-item small" href="#">곧장기부</a>
+                        <hr>
+                        <a class="dropdown-item middle" href="#">사업모델 엑셀러레이팅</a>
+                        <a class="dropdown-item small" href="#">Social Innovators Table(SIT)</a>
+                        <a class="dropdown-item small" href="#">CSAP</a>
+                        <a class="dropdown-item small" href="#">Sunny</a>
+                        <a class="dropdown-item small" href="#">LOOKIE</a>
                     </div>
+                    <!-- <div class="aBar"></div> -->
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link px-4" href="#">뉴스룸</a>
@@ -60,8 +69,8 @@
                 <li class="nav-item">
                     <a class="nav-link px-4" href="#">인재영입</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link px-4" href="#">ENG</a>
+                <li class="nav-item position-relative">
+                    <a class="nav-link px-4 eng" href="#">ENG</a>
                 </li>
             </ul>
             
@@ -73,7 +82,7 @@
         <div class="visual-cont">
             <div class="container ">
                 <div class="row">
-                    <div class="col-md-6 order-2 order-md-1 text-center text-md-start py-5">
+                    <div class="col-md-6 order-2 order-md-1 py-5">
                         <h2 class="py-5">
                             창의적이고 지속가능한<br>사업모델을 만듭니다
                         </h2>
@@ -88,7 +97,7 @@
     <div class="cont-1st position-relative">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 align-self-center order-2 order-md-1 text-center text-white text-md-start px-5 left">
+                <div class="col-md-6 align-self-center order-2 order-md-1 text-white px-5 left">
                     <h3 class="mb-5">
                         실험적인 사회변화 프로젝트를<br>개발합니다
                     </h3>
@@ -112,7 +121,7 @@
     <div class="cont-2st position-relative">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 align-self-center order-2 order-md-1 text-center text-white text-md-start px-5 left">
+                <div class="col-md-6 align-self-center order-2 order-md-1 text-white px-5 left">
                     <span class="sp">사업모델 개발</span>
                     <h3 class="mb-5">
                         실질적인 사회문제 해결을 위해<br>다양한 사업모델을 개발합니다
@@ -133,7 +142,7 @@
     <div class="cont-3st position-relative">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 align-self-center order-2 order-md-1 text-center text-white text-md-start px-5 left">
+                <div class="col-md-6 align-self-center order-2 order-md-1 text-white px-5 left">
                     <span class="sp">사업모델 엑셀러레이팅</span>
                     <h3 class="mb-5">
                         혁신적인 솔루션을 보유한<br>다양한 사업모델을 액셀러레이팅 합니다
@@ -158,7 +167,8 @@
                 <div class="col-md-4">
                     <div class="card text-center text-md-start">
                         <img class="card-img-top mb-3" src="images/20220810021358814.png" alt="Title">
-                        <div class="card-body">
+                        <div class="card-body p-0">
+                            <p class="card-text">공지사항</p>
                             <h4 class="card-title">써니루키팀 청년 사회혁신가 육성사업 기획 담당 영입</h4>
                             <p class="card-text">2022-08-10</p>
                         </div>
@@ -167,7 +177,8 @@
                 <div class="col-md-4">
                     <div class="card text-center text-md-start">
                         <img class="card-img-top mb-3" src="images/20220802042502510.png" alt="Title">
-                        <div class="card-body">
+                        <div class="card-body p-0">
+                            <p class="card-text">공지사항</p>
                             <h4 class="card-title">2022 LOOKIE 하반기 신입구성원 모집</h4>
                             <p class="card-text">2022-08-02</p>
                         </div>
@@ -176,7 +187,8 @@
                 <div class="col-md-4">
                     <div class="card text-center text-md-start">
                         <img class="card-img-top mb-3" src="images/20220720101856782.png" alt="Title">
-                        <div class="card-body">
+                        <div class="card-body p-0">
+                            <p class="card-text">공지사항</p>
                             <h4 class="card-title">치매 예방 디지털 인지훈련 참여 기관 모집</h4>
                             <p class="card-text">2022-07-18</p>
                         </div>
@@ -185,6 +197,35 @@
             </div>
         </div>
     </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-md-start">
+                    <a href="#" class="logo3">
+                        <img src="images/img_logo_black.png" alt="" class="max">
+                    </a>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end">
+                    <div class="family-site">
+                        <a href="#">Family Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="d-flex gap-2 justify-content-md-start">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end">
+                    <a href="#" class="logo4"></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>

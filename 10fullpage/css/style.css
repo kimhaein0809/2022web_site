@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1840px;
+}
+
+.p2 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 92px;
+  height: 53px;
+  margin: 10px;
+}
+
+.max {
+  width: 100%;
+}
+
+.nav-item {
+  padding: 0 30px;
+  position: relative;
+}
+
+.page1 #myVideo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  background-color: #eee;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.section.page1 .scrollBtn {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: xScroll 1s infinite alternate;
+          animation: xScroll 1s infinite alternate;
+}
+@-webkit-keyframes xScroll {
+  0% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+@keyframes xScroll {
+  0% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+.section.page1 #myVideo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section.page2 {
+  background-image: url(../images/section2-bg.jpg);
+}
+.section.page2 .scrollBtn {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: xScroll 1s infinite alternate;
+          animation: xScroll 1s infinite alternate;
+}
+@keyframes xScroll {
+  0% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+.section.page3 {
+  background-image: url(../images/section3-bg.jpg);
+}
+.section.page3 .scrollBtn {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: xScroll 1s infinite alternate;
+          animation: xScroll 1s infinite alternate;
+}
+@keyframes xScroll {
+  0% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+.section.page4 {
+  background-image: url(../images/section4-bg.jpg);
+}
+.section.page4 .scrollBtn {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: xScroll 1s infinite alternate;
+          animation: xScroll 1s infinite alternate;
+}
+@keyframes xScroll {
+  0% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+.section.page5 {
+  background: #02142b;
+}
+.section.page5 .scrollBtn {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: xScroll 1s infinite alternate;
+          animation: xScroll 1s infinite alternate;
+}
+@keyframes xScroll {
+  0% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+.section.footer {
+  background: #02142b;
+}/*# sourceMappingURL=style.css.map */

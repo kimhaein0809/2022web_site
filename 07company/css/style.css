@@ -475,7 +475,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .swiper .swiper-button-prev{
     background-image: url(../images/left.png);
     background-repeat:no-repeat;
-    position:absolute;top:auto;bottom:-5px;z-index:3;
+    position:absolute;top:auto;bottom:5px;z-index:3;
 }
 /* .swiper .swiper-button-next:after,
 .swiper .swiper-button-prev:after{visibility:hidden;} */

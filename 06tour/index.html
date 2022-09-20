@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,35 +10,40 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="js/jquery-3.1.1.min.js"></script>   
-    <script src="js/jquery.bxslider.js"></script>  
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             var slide = $(".slide").bxSlider({
                 controls: false,
-                pagerCustom:".formL",
-                touchEnabled:false
+                pagerCustom: ".formL",
+                touchEnabled: false
             });
             $("#sdate,#edate").datepicker({
                 dateFormat: 'yy/mm/dd',
                 prevText: '이전 달',
                 nextText: '다음 달',
-                monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
-                monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
-                dayNames: ['일','월','화','수','목','금','토'],
-                dayNamesShort: ['일','월','화','수','목','금','토'],
-                dayNamesMin: ['일','월','화','수','목','금','토'],
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
                 showMonthAfterYear: true,
 
                 yearSuffix: '년'
             })
         })
-        
-            
+
+
     </script>
 </head>
+
 <body>
     <header id="header">
         <div class="headerTopWrap">
@@ -76,8 +82,10 @@
             </nav>
         </div>
     </header>
-    <section class="secWrap"> <!-- 100% bgi -->
-        <div class="secsec container"> <!-- 980 m-auto -->
+    <section class="secWrap">
+        <!-- 100% bgi -->
+        <div class="secsec container">
+            <!-- 980 m-auto -->
             <div class="sec1st">
                 <img src="images/bll.png" alt="">
                 <img src="images/reallyAir.png" alt="" class="aa">
@@ -247,12 +255,12 @@
                                     </form>
                                 </li>
                             </ul>
-                        <div class="formL">
-                            <a href="#" data-slide-index="0">공항예약</a>
-                            <a href="#" data-slide-index="1">호텔예약</a>
-                            <a href="#" data-slide-index="2">렌트카</a>
-                            <a href="#" data-slide-index="3">휴양지</a>
-                        </div>
+                            <div class="formL">
+                                <a href="#" data-slide-index="0">공항예약</a>
+                                <a href="#" data-slide-index="1">호텔예약</a>
+                                <a href="#" data-slide-index="2">렌트카</a>
+                                <a href="#" data-slide-index="3">휴양지</a>
+                            </div>
                         </div>
                     </div>
                     <div class="bb">
@@ -282,8 +290,12 @@
                         <p>하와이<span>(HAWAII)<br></span>★★★★☆</p>
                     </li>
                     <li>
-                        <img src="images/weather.jpg" alt="">
-                        <p>27.1° 구름 조금<br><span>습도 60% 바람 남남동 2m/s</span></p>
+                        <div class="img"></div>
+                        <div class="wWrap">
+                            <h3 class="city">sff</h3>
+                            <p class="temp">27.1</p>
+                            <p class="w_id"></p>
+                        </div>
                     </li>
                     <li>
                         <img src="images/honey.jpg" alt="">
@@ -302,28 +314,28 @@
                         <p>
                             여행정보<span><br>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</span>
                         </p>
-                        
+
                     </li>
                     <li>
                         <img src="images/forest.jpg" alt="">
                         <p>
                             맛집정보<span><br>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</span>
                         </p>
-                        
+
                     </li>
                     <li>
                         <img src="images/home.jpg" alt="">
                         <p>
                             숙박정보<span><br>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</span>
                         </p>
-                        
+
                     </li>
                     <li>
                         <img src="images/ball.jpg" alt="">
                         <p>
                             여행자후기<span><br>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</span>
                         </p>
-                        
+
                     </li>
                 </ul>
             </div>
@@ -350,7 +362,33 @@
         </footer>
         <!-- <img src="images/reallyAir.png" alt="" class="air"> -->
     </section>
-</body>
-</html>
+    <script>
+        const myid = "a63550fdd0414822423aed5bab16dc89";
+    let loc = "seoul";
+    $.ajax({
+        url:"https://api.openweathermap.org/data/2.5/weather?q="+ loc +"&appid="+myid+"&units=metric",
+        dataType:"json",
+        success:locData
+    })
+    function locData(data){
+        console.log(data)
+        let city = data.name;
+        let weather = data.weather[0].description
+        let icon = data.weather[0].icon;
+        let iUrl = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png">`
+        let temp = data.main.temp+"&#x2103";
+        let tempMa = data.main.temp_max;
+        let tempMi = data.main.temp_min;
 
-    
+        $(".city").html(city);
+        $(".w_id").html(weather);
+        $(".img").html(iUrl);
+        $(".temp").html(temp);
+        $(".max").html(tempMa);
+        $(".min").html(tempMi);
+
+    }
+    </script>
+</body>
+
+</html>

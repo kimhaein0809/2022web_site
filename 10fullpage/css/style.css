@@ -1,3 +1,7 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,14 +20,39 @@ ul, li {
   max-width: 1840px;
 }
 
+.container1 {
+  padding: 0 80px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .p2 {
   font-size: 20px;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 72px;
   color: #fff;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  font-size: 62px;
+  font-weight: bold;
+  color: #fff;
+}
+
+h4 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+
+h5 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: lighter;
 }
 
 .logo {
@@ -40,14 +69,62 @@ h2 {
   padding: 0 30px;
   position: relative;
 }
+.nav-item span {
+  top: -6px;
+  font-size: 12px;
+  color: #16CAE5;
+  background: #fff;
+  width: 18px;
+  height: 16px;
+  border-radius: 7px;
+  text-align: center;
+  right: 30px;
+  line-height: 16px;
+  cursor: pointer;
+}
 
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+  --bs-offcanvas-width: 100%;
+}
+
+.offcanvas {
+  background: #16CAE5;
+}
+
+.offcanvas-body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.page1 .txtWrap {
+  z-index: 1;
+  color: white;
+}
+.page1 .txtWrap h2 {
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+.page1 .txtWrap .btn {
+  background: white;
+  border: none;
+  color: #16CAE5;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
 .page1 #myVideo {
-  position: absolute;
   width: 100%;
   height: 100%;
-  left: 50%;
-  top: 50%;
-  background-color: #eee;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -102,6 +179,16 @@ h2 {
   transform: translateX(-50%);
   -webkit-animation: xScroll 1s infinite alternate;
           animation: xScroll 1s infinite alternate;
+}
+.section.page2 .btn {
+  background: #16CAE5;
+  border: none;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 50px;
 }
 @keyframes xScroll {
   0% {
@@ -170,4 +257,33 @@ h2 {
 }
 .section.footer {
   background: #02142b;
+}
+
+@media (max-width: 1199px) {
+  h2 {
+    font-size: 65px;
+  }
+}
+@media (max-width: 991px) {
+  h5 {
+    font-size: 5vw;
+  }
+  h2 {
+    font-size: 7vw;
+  }
+  .container1 {
+    width: calc(100vw - 50px);
+    padding: 0 20px;
+  }
+  #fp-nav ul li {
+    margin: 4px 0;
+    transform: scale(0.7);
+  }
+  .page1 .txtWrap h2 {
+    margin-bottom: 30px;
+  }
+  .page1 .txtWrap .btn {
+    font-size: 16px;
+    padding: 8px 24px;
+  }
 }/*# sourceMappingURL=style.css.map */

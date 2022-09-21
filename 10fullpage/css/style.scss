@@ -1,6 +1,7 @@
 // color 
 $fcolor1:#333;
 $fcolor2:#fff;
+$fcolor3:#16CAE5;
 $pColor1:#eee;
 $shadow1:0 0 10px rgba(0,0,0,.5);
 
@@ -8,6 +9,9 @@ body{font-family: 'Montserrat', sans-serif;}
 *{margin: 0;padding: 0;}
 a:link,a:visited{text-decoration: none;color:$fcolor1}
 ul,li{list-style: none;}
+ol, ul {
+    padding-left: 0;
+}
 .container{
     max-width: 1840px;
 }
@@ -117,6 +121,57 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
         background-image: url(../images/section2-bg.jpg);
     }
     &.page3{
+        .quarter-li{
+            height: 100%;
+            position: relative;
+            display: flex;align-items: center;
+            z-index: 2;
+
+            
+            li{
+                border-right: 1px solid rgba(255,255,255,.25);
+                height: 100%;
+                width: 33.33%;
+                &:hover{
+                    transition:.4s;
+                    background: rgba(18,171,194,.6);
+                    .info{opacity: 1;}
+                }
+                
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    display: flex;justify-content: center;align-items: center;
+                    div{
+                        color: #fff;
+                        margin-top: 140px;display: flex;
+                        flex-direction: column;
+                        justify-content: center;align-items: center;
+                        img{
+                            margin-bottom: 20px;
+                        }
+                        .sb{
+                            color: #16CAE5;
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        .info{
+                            font-size: 20px;
+                            color: white;
+                            margin-top: 30px;
+                            line-height: 1.8;
+                            transition: opacity .4s;
+                            opacity: 0;
+                        }
+                    }
+                }
+
+            }
+            
+        }
+        
+        
         .scrollBtn{
             position: absolute;
             z-index: 1;
@@ -176,10 +231,6 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
     }
     h2{
         font-size: 7vw;
-    }
-    .container1{
-        width: calc(100vw - 50px);
-        padding: 0 20px;
     }
     #fp-nav ul li{margin: 4px 0;transform: scale(.7);}
     .page1{

@@ -328,6 +328,55 @@ h5 {
 .section.page5 {
   background: #02142b;
 }
+.section.page5 .contact-top {
+  margin-bottom: 50px;
+}
+.section.page5 .contact-top ul li strong {
+  width: 200px;
+  display: inline-block;
+  color: #16CAE5;
+}
+.section.page5 .contact-btm p {
+  position: relative;
+}
+.section.page5 .contact-btm p label {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.section.page5 .contact-btm p label span {
+  color: #16CAE5;
+  margin-left: 4px;
+}
+.section.page5 .contact-btm p input {
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  background: none;
+  padding: 8px 8px 8px 100px;
+}
+.section.page5 .contact-btm .message {
+  position: relative;
+}
+.section.page5 .contact-btm .message label {
+  position: absolute;
+  top: 24px;
+  transform: translateY(-50%);
+  left: 14px;
+}
+.section.page5 .contact-btm .message textarea {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 39px 15px 15px 15px;
+  height: 140px;
+  color: white;
+}
 .section.page5 .scrollBtn {
   position: absolute;
   z-index: 1;

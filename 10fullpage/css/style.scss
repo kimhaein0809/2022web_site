@@ -236,6 +236,61 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
         background-image: url(../images/section4-bg.jpg);
     }
     &.page5{
+        .contact-top{
+            margin-bottom: 50px;
+            ul{
+                li{
+                    strong{
+                        width: 200px;
+                        display:inline-block;
+                        color: #16CAE5;
+                    }
+                }
+            }
+        }
+        .contact-btm{
+            p{
+                position: relative;
+                label {
+                    color: #fff;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    span{
+                        color: #16CAE5;
+                        margin-left: 4px;
+                    }
+                }
+                input{
+                    font-size: 14px;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    background: none;
+                    padding: 8px 8px 8px 100px;
+                }
+            }
+            .message{
+                position: relative;
+                label{
+                    position: absolute;
+                    top: 24px;
+                    transform: translateY(-50%);
+                    left: 14px;
+                }
+                textarea{
+                    background: rgba(255,255,255,.08);
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    padding: 39px 15px 15px 15px;
+                    height: 140px;
+                    color: white;
+                }
+            }
+        }
         .scrollBtn{
             position: absolute;
             z-index: 1;

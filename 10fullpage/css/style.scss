@@ -122,6 +122,12 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
         background-image: url(../images/section2-bg.jpg);
     }
     &.page3{
+        .scrollBtn{
+            position: absolute;
+            z-index: 1;
+            left:50%;transform:translateX(-50%);
+            animation:xScroll 1s infinite alternate
+        }
         .quarter-li{
             height: 100%;
             position: relative;
@@ -173,12 +179,7 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
         }
         
         
-        .scrollBtn{
-            position: absolute;
-            z-index: 1;
-            left:50%;transform:translateX(-50%);
-            animation:xScroll 1s infinite alternate
-        }
+        
 
         @keyframes xScroll {
             0%{bottom: 20px;}

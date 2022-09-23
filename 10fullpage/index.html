@@ -13,10 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css" integrity="sha512-5TGRCl3hPoqtruhO+mubTuySHOfcEBvyIfiWHoCK8wDLmf6C1U73OUoNCU6ZvyT/8vfCcha1INDIo8dabDmQjw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js" integrity="sha512-naEQG74IcOLQ6K/B1PmhIcZ4i3YE2FXs2zm603E1Q3shbron+PmYLg44/q+xAymD/RvskZ2H8l1Qa7I5qELlrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/jquery.fullPage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-md fixed-top">
@@ -66,11 +73,11 @@
     <div class="section page1" data-anchor="m1st">
         <div class="wrap">
             <div class="container1 txtWrap">
-                <h5 class="mb-4">의료 빅데이터에<br>새로운 임상적 가치를 발굴하는
+                <h5 class="mb-4" data-aos="fade-up" data-aos-duration="1000">의료 빅데이터에<br>새로운 임상적 가치를 발굴하는
                 </h5>
-                <h2>인공지능 소프트웨어<br>의료기기 개발 기업
+                <h2 data-aos="fade-up" data-aos-duration="1500">인공지능 소프트웨어<br>의료기기 개발 기업
                 </h2>
-                <a href="#!" class="btn btn-light">더보기<i class="fa-solid fa-arrow-right ms-2"></i></a>
+                <a href="#!" class="btn btn-light" data-aos="fade-up" data-aos-duration="2000">더보기<i class="fa-solid fa-arrow-right ms-2"></i></a>
             </div>
             <video id="myVideo" data-autoplay muted loop>
                 <source src="movie/main_video.mp4">
@@ -81,11 +88,31 @@
         </div>
     </div>
     <div class="container1 section page2" data-anchor="m2st">
-        <div class="txtWrap">
-            <h3 class="mb-4">BUD.ON<br>
-                IN NUMBERS
-            </h3>
-            <a href="#!" class="btn btn-light">더보기<i class="fa-solid fa-arrow-right ms-2"></i></a>
+        <div class="tWrap row">
+            <div class="txtWrap col-md-6">
+                <h3 class="mb-4">BUD.ON<br>
+                    IN NUMBERS
+                </h3>
+                <a href="#!" class="btn btn-light">더보기<i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+            <div class="center text-white col-md-6 d-flex align-items-center">
+                <div class="text-center">
+                    <h1>40,000+</h1>
+                    <p>데이터 수집 환자 수</p>
+                </div>
+                <div class="text-center">
+                    <h1>4</h1>
+                    <p>논문 및 지식재산권</p>
+                </div>
+                <div class="text-center">
+                    <h1>7</h1>
+                    <p>국내 도입 병원</p>
+                </div>
+                <div class="text-center">
+                    <h1>700+</h1>
+                    <p>국내 도입 병상 수</p>
+                </div>
+            </div>
         </div>
         <div class="scrollBtn">
             <a href="#m3st"><img src="images/arrowdown.png" alt=""></a>
@@ -142,11 +169,11 @@
     </div>
     <div class="container1 section page4" data-anchor="m4st">
         <div class="txtWrap">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
             <h5 class="mb-3 bold">NEWS
             </h5>
             <p class="text-white">버드온의 새로운 소식을 확인하세요.</p>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
         <!-- Swiper -->
 
@@ -222,8 +249,8 @@
             <a href="#m5st"><img src="images/arrowdown.png" alt=""></a>
         </div>
     </div>
-    <div class="container1 section page5 text-white" data-anchor="m5st">
-        <div class="contact-top">
+    <div class="section page5 text-white" data-anchor="m5st">
+        <div class="container1 contact-top">
             <h5 class="mb-3 bold">CONTACT US</h5>
             <ul>
                 <li class="mb-3"><strong>ADDRESS</strong>서울시 강남구 남부순환로 2621, 13층 </li>
@@ -232,7 +259,7 @@
                 <li class="mb-3"><strong>BUSINESS HOURS</strong>Mon - Fri 9:30 - 18:30 (GMT+9)</li>
             </ul>
         </div>
-        <div class="contact-btm w-50">
+        <div class="container1 contact-btm w-50">
             <form name="contact" id="contact" autocomplete="off" onsubmit="return false">
                 <div class="left">
                     <p>
@@ -248,11 +275,25 @@
                         <input type="text" name="email" id="email" value="">
                     </p>
                 </div>
-                <p class="message">
+                <p class="message mb-5">
                     <label for="">Message<span>*</span></label>
-                    <textarea name="contents" id="contents"></textarea>
+                    <textarea name="contents" id="contents" style="resize:none"></textarea>
                 </p>
+                <p class="agree">
+                    <input type="checkbox" id="agree" class="hidden">
+                    <label for="agree">
+                        <i class="fa-regular fa-circle-check"></i>
+                        이메일 수집에 동의합니다. (문의에 대한 회신 목적으로만 사용되며, 문의 응대 후 파기됩니다.)
+                    </label>
+                </p>
+                <a href="#!" class="btn py-2 px-5 mt-5" onclick="contactFrmChk()">문의하기</a>
             </form>
+        </div>
+        <div class="conMap">
+            <div class="map">
+                <img src="images/section5-map.png" alt="" class="mapbg">
+                <img src="images/logo-contact.png" alt="" class="loc">
+            </div>
         </div>
         <div class="scrollBtn">
             <a href="#m6st"><img src="images/arrowdown.png" alt=""></a>
@@ -260,7 +301,27 @@
     </div>
     <!-- footer -->
     <div class="section fp-auto-height footer" data-anchor="m6st">
-        <div class="container1 py-5"></div>
+        <div class="container1 py-5 d-flex">
+            <div class="logo-box">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="" class="">
+                </a>
+            </div>
+            <div class="footer-info text-white ps-4">
+                <div class="ftop d-flex">
+                    <p class="pe-4">(주) 버드온</p>
+                    <a href="#">
+                        개인정보처리방침
+                    </a>
+                </div>
+                <ul class="d-flex gap-4">
+                    <li>서울시 강남구 남부순환로 2621, 13층</li>
+                    <li>T 070-8025-1561</li>
+                    <li>E inquiry@bud-on.com</li>
+                    <li>© BUD.on</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 

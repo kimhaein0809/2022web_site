@@ -5,6 +5,7 @@ $("#fullpage").fullpage({
 })
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
+    centerPadding: '60px',
     spaceBetween: 0,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -36,3 +37,27 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+  $('.center').slick({
+    centerMode: true,
+    slidesToShow: 3,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+  AOS.init();

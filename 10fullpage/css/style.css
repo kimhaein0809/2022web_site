@@ -24,6 +24,16 @@ ol, ul {
   padding-left: 0;
 }
 
+.hidden {
+  height: 0;
+  width: 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0;
+  border: 0;
+}
+
 .container {
   max-width: 1840px;
 }
@@ -32,12 +42,22 @@ ol, ul {
   padding: 0 80px;
 }
 
+#fp-nav li:nth-child(6) {
+  display: none;
+}
+
 .bold {
   font-weight: bold;
 }
 
 .p2 {
   font-size: 20px;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: bold;
+  color: #16CAE5;
 }
 
 h2 {
@@ -209,6 +229,14 @@ h5 {
 .section.page3 {
   background-image: url(../images/section3-bg.jpg);
 }
+.section.page3 .scrollBtn {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: xScroll 1s infinite alternate;
+          animation: xScroll 1s infinite alternate;
+}
 .section.page3 .quarter-li {
   height: 100%;
   position: relative;
@@ -260,14 +288,6 @@ h5 {
   transition: opacity 0.4s;
   opacity: 0;
 }
-.section.page3 .scrollBtn {
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-animation: xScroll 1s infinite alternate;
-          animation: xScroll 1s infinite alternate;
-}
 @keyframes xScroll {
   0% {
     bottom: 20px;
@@ -278,17 +298,6 @@ h5 {
 }
 .section.page4 {
   background-image: url(../images/section4-bg.jpg);
-}
-.section.page4 .txtWrap {
-  position: relative;
-}
-.section.page4 .txtWrap .swiper-button-next {
-  position: absolute;
-  right: 0;
-}
-.section.page4 .txtWrap .swiper-button-prev {
-  position: absolute;
-  right: 400px;
 }
 .section.page4 .swiper-slide .new-img {
   margin-bottom: 30px;
@@ -326,6 +335,7 @@ h5 {
   }
 }
 .section.page5 {
+  position: relative;
   background: #02142b;
 }
 .section.page5 .contact-top {
@@ -377,6 +387,47 @@ h5 {
   height: 140px;
   color: white;
 }
+.section.page5 .contact-btm .agree {
+  position: relative;
+}
+.section.page5 .contact-btm .agree input {
+  position: absolute;
+  left: -432px;
+  top: -8px;
+}
+.section.page5 .contact-btm .btn {
+  color: white;
+  border: 1px solid #fff;
+}
+.section.page5 .contact-btm .btn:hover {
+  background: white;
+  color: #333;
+}
+.section.page5 .conMap {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.section.page5 .conMap .map {
+  position: relative;
+}
+.section.page5 .conMap .map .mapbg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-450px, -300px);
+  max-width: none;
+  width: 1582px;
+}
+.section.page5 .conMap .map .loc {
+  position: absolute;
+  transform: translate(430px, 300px);
+  top: 50%;
+  left: 50%;
+}
 .section.page5 .scrollBtn {
   position: absolute;
   z-index: 1;
@@ -395,6 +446,17 @@ h5 {
 }
 .section.footer {
   background: #02142b;
+}
+.section.footer div {
+  opacity: 0.8;
+}
+.section.footer div a {
+  color: white;
+  font-weight: bold;
+}
+.section.footer div a img {
+  width: 92px;
+  height: 53px;
 }
 
 @media (max-width: 1199px) {

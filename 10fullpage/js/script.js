@@ -61,3 +61,4 @@ var swiper = new Swiper(".mySwiper", {
     ]
   });
   AOS.init();
+  new WOW().init();

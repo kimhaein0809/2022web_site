@@ -368,6 +368,7 @@ h5 {
   color: white;
   background: none;
   padding: 8px 8px 8px 100px;
+  z-index: 1;
 }
 .section.page5 .contact-btm .message {
   position: relative;
@@ -421,6 +422,7 @@ h5 {
   transform: translate(-450px, -300px);
   max-width: none;
   width: 1582px;
+  z-index: 999;
 }
 .section.page5 .conMap .map .loc {
   position: absolute;
@@ -505,6 +507,13 @@ h5 {
     margin-bottom: 30px;
   }
   .page1 .txtWrap .btn {
+    font-size: 16px;
+    padding: 8px 24px;
+  }
+  .page2 .txtWrap h3 {
+    font-size: 36px;
+  }
+  .page2 .txtWrap .btn {
     font-size: 16px;
     padding: 8px 24px;
   }

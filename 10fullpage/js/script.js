@@ -37,28 +37,20 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
-  $('.center').slick({
-    centerMode: true,
-    slidesToShow: 3,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          slidesToShow: 1
-        }
-      }
-    ]
+  var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2000,
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
   AOS.init();
   new WOW().init();

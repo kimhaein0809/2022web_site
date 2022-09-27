@@ -29,7 +29,7 @@ ol, ul {
 #fp-nav li:nth-child(6){display: none;}
 .bold{font-weight: bold;}
 .p2{font-size: 20px;}
-h1{font-size: 72px;font-weight: bold;color: #16CAE5;}
+h1{font-size: 98px;font-weight: bold;color: #16CAE5;}
 h2{font-size: 72px;color: $fcolor2;}
 h3{font-size: 62px;font-weight: bold;color: $fcolor2;}
 h4{font-size: 50px;font-weight: bold;color: $fcolor2;}
@@ -76,9 +76,6 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
         width: 100%;height: 100%;
         object-fit:cover;
     }
-}
-.page2{
-    
 }
 
 .section{
@@ -138,8 +135,6 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
             font-weight: bold;
             font-size: 20px;
             margin-top: 50px;
-        }
-        .center{
         }
         @keyframes xScroll {
             0%{bottom: 20px;}
@@ -213,17 +208,7 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
         background-image: url(../images/section3-bg.jpg);
     }
     &.page4{
-        .txtWrap{
-            .swiper-button-next{
-                
-            }
-            .swiper-button-prev{
-                
-            }
-        }
         .swiper-slide {
-            ul{
-            }
             .new-img{
                 margin-bottom: 30px;
                 position: relative;
@@ -259,7 +244,10 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
         background-image: url(../images/section4-bg.jpg);
     }
     &.page5{
-        position: relative;
+        background-image: url(../images/finbg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         .contact-top{
             margin-bottom: 50px;
             ul{
@@ -335,14 +323,7 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
             position: absolute;height: 100%;top: 0;left: 0;overflow: hidden;
             .map{
                 position: relative;
-                .mapbg{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-450px, -300px);
-                    max-width: none;
-                    width: 1582px;
-                }
+
                 .loc{
                     position: absolute;
                     transform: translate(430px, 300px);
@@ -362,7 +343,6 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
             0%{bottom: 20px;}
             100%{bottom: 50px;}
         }
-        background: #02142b;
     }
     &.footer{
         background: #02142b;

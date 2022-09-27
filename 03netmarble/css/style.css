@@ -66,7 +66,7 @@
 }
 .container.cont1st h1:after{
     content: "";position: absolute;
-    bottom: 0;left: 0;width: 70px;height: 5px;
+    bottom: -20px;left: 0;width: 70px;height: 5px;
     background-color: #ffd44a;
 }
 .container.cont1st .sub{padding-left: 600px;
@@ -179,8 +179,6 @@
 .policy li a{
     display: block;margin: 0 10px;font-size: 12px;
     color: hsla(0,0%,88.2%,.7);line-height: 20px;letter-spacing: -1.6px;
-}
-.policy li a:first-child{margin-left: 0;
 }
 .topMove {
     background: #000;

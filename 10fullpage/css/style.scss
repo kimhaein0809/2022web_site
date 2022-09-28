@@ -47,6 +47,13 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
         right: 30px;line-height: 16px;cursor: pointer;
     }
 }
+.navbar-toggler{
+    border: none;
+    
+}
+.navbar-toggler-icon{
+    background-image: url(../images/tggle.png);
+}
 .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
     --bs-offcanvas-width: 100%;}
 .offcanvas{background:#16CAE5;}
@@ -419,9 +426,8 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
             }
         }
     }
-    &.page2{
+    .page2{
         .btn{
-            
             margin-top: 0;
         }
         .txtWrap{

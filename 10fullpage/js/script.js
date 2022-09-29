@@ -53,4 +53,16 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
   AOS.init();
-  new WOW().init();
+
+
+  let on = "1"
+
+  $(".shareWrap").click(function(){
+    if( on == "1" ){
+      $("ul").addClass("view");
+      on = "2"
+    }else{
+      $("ul").removeClass("view");
+      on = "1";
+    }
+  })

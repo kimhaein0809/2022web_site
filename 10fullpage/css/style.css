@@ -550,6 +550,11 @@ h5 {
 .section.footer {
   background: #02142b;
 }
+.section.footer .logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .section.footer div {
   opacity: 0.8;
 }
@@ -560,6 +565,30 @@ h5 {
 .section.footer div a img {
   width: 92px;
   height: 53px;
+}
+
+.subVisual {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.subVisual .txtWrap {
+  color: white;
+  text-align: center;
+}
+.subVisual .txtWrap h2 {
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.subVisual.company {
+  background-image: url(../images/sub-visual1.jpg);
 }
 
 @media (max-width: 1199px) {

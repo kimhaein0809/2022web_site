@@ -425,6 +425,7 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
     }
     &.footer{
         background: #02142b;
+        .logo-box{display: flex;align-items: center;justify-content: center;}
         div{
             opacity: .8;
             a{
@@ -439,6 +440,33 @@ h5{font-size: 40px;color: $fcolor2;font-weight: lighter;}
         
     }
 }
+
+//sub
+
+.subVisual{
+    height:350px;
+    display: flex;justify-content: center;
+    align-items: end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .txtWrap{
+        color:white;text-align: center;
+        h2{
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            font-size: 80px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+
+.subVisual.company{background-image: url(../images/sub-visual1.jpg)}
+
+
 @media (max-width: 1399px) {
     
 }

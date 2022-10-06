@@ -553,7 +553,6 @@ h5 {
 .section.footer .logo-box {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .section.footer div {
   opacity: 0.8;

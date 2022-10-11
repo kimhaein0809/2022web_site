@@ -1,7 +1,47 @@
 $("#fullpage").fullpage({
     anchors:["m1st","m2st","m3st","m4st","m5st"],
     navigation:true,
-    navigationPosition:"fp-left"
+    navigationPosition:"fp-left",
+    afterLoad:function(anchorslink,index){
+      console.log(anchorslink,index);
+      if(index == 1){
+        $(".page1 .txt1").addClass("move");
+        $(".page1 .txt2").addClass("move");
+        $(".page1 .btn").addClass("move");
+      }else{
+        $(".page1 .txt1").removeClass("move");
+        $(".page1 .txt2").removeClass("move");
+        $(".page1 .btn").removeClass("move");
+      }
+      if(index == 2){
+        $(".page2 .txt3").addClass("move");
+        $(".page2 .btn").addClass("move");
+      }else{
+        $(".page2 .txt3").removeClass("move");
+        $(".page2 .btn").removeClass("move");
+      }
+      if(index == 3){
+        $(".page3 li").addClass("move");
+      }else{
+        $(".page3 li").removeClass("move");
+      }
+      if(index == 4){
+        $(".page4 .txtWrap").addClass("move");
+        $(".page4 .swiper").addClass("move");
+      }else{
+        $(".page4 .txtWrap").removeClass("move");
+        $(".page4 .swiper").removeClass("move");
+      }
+      if(index == 5){
+        $(".page5 .contact-top").addClass("move");
+        $(".page5 .contact-btm").addClass("move");
+        $(".page5 .conMap").addClass("move");
+      }else{
+        $(".page5 .contact-top").removeClass("move");
+        $(".page5 .contact-btm").removeClass("move");
+        $(".page5 .conMap").removeClass("move");
+      }
+    }
 })
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,

@@ -467,15 +467,21 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
     display: none;
 }
-.swiper .swiper-button-next{
-    background-image: url(../images/right.png);
-    background-repeat:no-repeat;
-    position: absolute;top:auto;bottom:5px;left:110px;z-index:3;
+.contents2{position: relative;}
+.btnWrap{
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 30px;
+    z-index: 10;
+    gap: 10px;
 }
-.swiper .swiper-button-prev{
-    background-image: url(../images/left.png);
-    background-repeat:no-repeat;
-    position:absolute;top:auto;bottom:5px;z-index:3;
+.txtWrap{position: relative;}
+.swiper-button-n,.swiper-button-p{
+    background: rgba(0,0,0,0,3);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
 }
 /* .swiper .swiper-button-next:after,
 .swiper .swiper-button-prev:after{visibility:hidden;} */
@@ -713,7 +719,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     }
     .subbg{height: 1000px;}
     /* footer */
-
 .ft-inner{display: block; padding:50px 30px;position: relative;}
 .ft-logo{
     flex-basis: 20%;margin-bottom: 10px;
